@@ -1,0 +1,26 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-geist-sans), ui-sans-serif, system-ui, sans-serif;
+  --font-mono: var(--font-geist-mono), ui-monospace, monospace;
+  --font-serif: "Georgia", "Times New Roman", serif;
+
+  --color-accent: #1a56db;
+  --color-accent-light: #e8eefb;
+  --color-surface: #fafaf9;
+  --color-border: #e7e5e4;
+  --color-muted: #78716c;
+}
+
+body {
+  font-family: var(--font-sans);
+  line-height: 1.7;
+}
+
+h1,
+h2,
+h3 {
+  font-family: var(--font-serif);
+  line-height: 1.2;
+  letter-spacing: -0.01em;
+}
