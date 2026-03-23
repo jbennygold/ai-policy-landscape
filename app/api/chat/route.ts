@@ -1,4 +1,4 @@
-import { streamText } from "ai";
+import { streamText, convertToModelMessages } from "ai";
 import { gateway } from "@ai-sdk/gateway";
 import { systemPrompt } from "@/lib/chat-context";
 
@@ -8,7 +8,7 @@ export async function POST(req: Request) {
   const result = streamText({
     model: gateway("anthropic/claude-sonnet-4.6"),
     system: systemPrompt,
-    messages,
+    messages: await convertToModelMessages(messages),
   });
 
   return result.toUIMessageStreamResponse();

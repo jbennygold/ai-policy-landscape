@@ -3,6 +3,8 @@
 import { useState, useRef, useEffect } from "react";
 import { useChat } from "@ai-sdk/react";
 import { DefaultChatTransport } from "ai";
+import ReactMarkdown from "react-markdown";
+import remarkGfm from "remark-gfm";
 
 const starters = [
   "What are the areas of bipartisan consensus?",
@@ -132,8 +134,8 @@ export function ChatDrawer() {
                   Assistant
                 </p>
               )}
-              <div className="text-sm leading-relaxed text-stone-700 whitespace-pre-wrap">
-                {text}
+              <div className="prose prose-sm prose-stone max-w-none text-stone-700 [&_p]:my-1.5 [&_ul]:my-1.5 [&_ol]:my-1.5 [&_li]:my-0.5 [&_h3]:text-sm [&_h3]:font-semibold [&_h3]:mt-3 [&_h3]:mb-1 [&_h4]:text-sm [&_h4]:font-medium [&_h4]:mt-2 [&_h4]:mb-1 [&_strong]:text-stone-800">
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>{text}</ReactMarkdown>
               </div>
             </div>
           );

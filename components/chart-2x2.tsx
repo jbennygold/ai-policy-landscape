@@ -90,9 +90,9 @@ export function Chart2x2({
             {/* Y axis labels */}
             <text
               x={8}
-              y={PAD + INNER_H / 2}
+              y={PAD + INNER_H - 10}
               textAnchor="middle"
-              transform={`rotate(-90, 8, ${PAD + INNER_H / 2})`}
+              transform={`rotate(-90, 8, ${PAD + INNER_H - 10})`}
               className="fill-stone-400 text-[10px]"
             >
               {chart.yLow}
