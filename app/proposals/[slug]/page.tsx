@@ -67,6 +67,47 @@ export default async function ProposalPage({
         {proposal.regulatoryPhilosophy}
       </p>
 
+      <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+        <div>
+          <h2
+            className="text-2xl font-semibold text-stone-900"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Strengths
+          </h2>
+          <p className="mt-1 text-xs text-stone-400">
+            Derived from the proposal&rsquo;s own policy documents
+          </p>
+          <ul className="mt-4 space-y-2 pl-5 text-sm leading-relaxed text-stone-700">
+            {proposal.strengths.map((s) => (
+              <li key={s} className="flex gap-2">
+                <span className="mt-0.5 shrink-0 text-emerald-600">+</span>
+                <span>{s}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+        <div>
+          <h2
+            className="text-2xl font-semibold text-stone-900"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            Weaknesses
+          </h2>
+          <p className="mt-1 text-xs text-stone-400">
+            From the perspective of political opposition
+          </p>
+          <ul className="mt-4 space-y-2 pl-5 text-sm leading-relaxed text-stone-700">
+            {proposal.weaknesses.map((w) => (
+              <li key={w} className="flex gap-2">
+                <span className="mt-0.5 shrink-0 text-red-500">&minus;</span>
+                <span>{w}</span>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+
       <h2
         className="mt-10 text-2xl font-semibold text-stone-900"
         style={{ fontFamily: "var(--font-serif)" }}

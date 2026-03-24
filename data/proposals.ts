@@ -21,6 +21,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Light-touch, innovation-first. The framework explicitly avoids creating a new regulatory body or mandatory compliance regime for AI developers. Enforcement of existing laws, not new AI-specific mandates, is the preferred mechanism.",
+    strengths: [
+      "Protects residential ratepayers from bearing data center electricity costs, addressing a concrete consumer harm that other proposals ignore",
+      "Regulatory sandboxes and AI-ready federal datasets give startups access to compute and data resources otherwise monopolized by large incumbents",
+      "Preserves state police powers for fraud, child protection, and consumer protection, maintaining proven enforcement mechanisms",
+      "Federal digital replica protection and collective licensing support address creator concerns without imposing rigid copyright mandates",
+      "Clarity on preemption reduces compliance fragmentation for companies operating across multiple states",
+    ],
+    weaknesses: [
+      "Amounts to a regulatory blank check for the AI industry — no new mandatory obligations, no new enforcement authority, and no accountability mechanisms for harms that existing laws were never designed to address",
+      "Preemption of state laws strips the only governments actually regulating AI of their authority, while offering nothing meaningful in return at the federal level",
+      "Conspicuously silent on worker displacement — offering only 'non-regulatory' training suggestions while entire job categories face elimination",
+      "Defers copyright questions to courts, effectively stalling protections for creators whose work is already being used to train models without compensation",
+      "The 'innovation-first' framing is indistinguishable from the lobbying position of the companies it would regulate, raising serious questions about regulatory capture",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 20, y: 25 },
       "prevention-authority": { x: 75, y: 25 },
@@ -48,6 +62,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Comprehensive and interventionist, despite the deregulatory framing. The bill creates multiple enforcement pathways (FTC, state AGs, private right of action), mandatory reporting obligations, and a risk-based evaluation program. The tension between its stated purpose and its actual scope is one of its most notable features.",
+    strengths: [
+      "Creates a duty of care for AI chatbot developers, establishing a legal standard that does not currently exist in federal law",
+      "Quarterly workforce change disclosures to BLS would generate the first systematic national data on AI-driven job displacement",
+      "Multiple overlapping enforcement pathways — FTC, state AGs, and private right of action — ensure accountability cannot be blocked by a single captured regulator",
+      "Risk-based evaluation program establishes pre-deployment accountability for the most dangerous systems",
+      "Content provenance requirements and the NO FAKES Act address deepfakes and digital replicas with specific enforceable standards",
+    ],
+    weaknesses: [
+      "A 17-title, hundreds-of-pages bill branded as 'deregulation' is an exercise in doublespeak — the gap between its stated purpose and actual scope undermines trust in the legislative process",
+      "Full repeal of Section 230 would devastate small platforms and startups while doing nothing to address AI-specific harms, a reckless giveaway to trial lawyers",
+      "The bill's sheer complexity makes it a lobbyist's playground — by the time it passes committee, industry carve-outs will render the strongest provisions toothless",
+      "Aggressive federal preemption wipes out state laws that are already working, replacing democratic experimentation with a one-size-fits-all federal mandate",
+      "Developer and deployer liability frameworks are so broadly drawn that they will chill open-source development and academic research, concentrating AI power further among deep-pocketed incumbents",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 80, y: 85 },
       "prevention-authority": { x: 70, y: 70 },
@@ -75,6 +103,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Prevention-first with strong federal institutional capacity. OpenAI endorses a meaningful federal testing regime, not merely voluntary commitments, while arguing that only the federal government has the capabilities to implement effective pre-deployment evaluation. This positions them to the left of the White House on federal oversight while supporting preemption of state regulation.",
+    strengths: [
+      "Endorses mandatory federal pre-deployment testing, not just voluntary commitments — a stronger safety stance than most industry players",
+      "Leveraging classified government capabilities for testing frontier systems would identify national security risks that private audits cannot",
+      "The sequenced approach — federal framework first, then state alignment — offers a coherent path out of regulatory fragmentation",
+      "CAISI as a cornerstone institution would create durable, non-partisan technical evaluation capacity",
+      "Global AI Safety Institute network proposal addresses the international coordination gap that most domestic proposals ignore entirely",
+    ],
+    weaknesses: [
+      "This is the fox designing the henhouse — an AI company writing the rules for its own industry, then positioning that as public safety leadership",
+      "Conditional preemption is a Trojan horse: once states lose regulatory authority, the 'meaningful federal framework' it depends on may never materialize or may be gutted by industry lobbying",
+      "Conspicuously silent on worker displacement, economic concentration, and distributional impacts — the issues that actually affect most Americans",
+      "Classified testing creates an opaque system where the public has no way to verify that safety evaluations are rigorous or independent",
+      "The position conveniently ensures that only the largest, best-resourced companies can navigate federal compliance, locking out smaller competitors and open-source alternatives",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 25, y: 30 },
       "prevention-authority": { x: 80, y: 90 },
@@ -102,6 +144,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Government-facilitated redistribution and proactive workforce adjustment. Kelly's approach treats AI primarily as an economic disruption problem requiring institutional investment, not just a safety or innovation problem. His emphasis on industry-funded transition mechanisms rather than taxpayer-funded programs distinguishes him from both the White House and progressive approaches.",
+    strengths: [
+      "The AI Horizon Fund creates a concrete, industry-funded mechanism for worker transition rather than leaving displaced workers to fend for themselves",
+      "Advance notice requirements for AI-driven workforce changes give workers and communities time to prepare, modeled on proven WARN Act principles",
+      "BLS data collection expansion would finally give policymakers real numbers on AI-driven job creation, displacement, and retraining outcomes",
+      "Bipartisan security provisions with Sen. Young demonstrate the proposal can attract cross-aisle support",
+      "Industry-funded rather than taxpayer-funded transition mechanisms place costs on the companies profiting from disruption",
+    ],
+    weaknesses: [
+      "The Horizon Fund is a slush fund with no teeth — voluntary industry 'contributions' to worker retraining is the same failed corporate social responsibility model that has never delivered meaningful results",
+      "Completely ignores AI safety, pre-deployment testing, and catastrophic risk — as if the only problem with AI is that it costs jobs",
+      "No enforcement mechanism for workforce change notifications — companies can simply ignore advance notice requirements the way they routinely ignore existing labor protections",
+      "Frames AI disruption as a manageable adjustment problem when the scale of displacement could be civilizational, offering band-aids for bullet wounds",
+      "The bipartisan framing is a way to avoid taking hard positions on preemption, liability, or any issue where industry might push back",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 65, y: 25 },
       "prevention-authority": { x: 65, y: 25 },
@@ -129,6 +185,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Structural intervention and democratic control. Sanders views AI not as a technology policy problem but as a power and inequality problem. His proposals -- moratoriums, breakups, robot taxes -- are tools of political economy, not technical governance. He is the only major voice calling for a pause in AI infrastructure buildout.",
+    strengths: [
+      "The only proposal that addresses concentration of corporate power in AI — breaking up dominant companies would restore competitive dynamics",
+      "A robot tax directly links automation profits to displaced worker support, creating an automatic funding mechanism that scales with disruption",
+      "The data center moratorium is the only proposal that takes environmental costs of AI infrastructure seriously",
+      "Employee ownership provisions would distribute AI wealth gains more broadly rather than concentrating them among shareholders and executives",
+      "Sanders' 100-million-jobs report forces an honest conversation about displacement scale that other proposals carefully avoid",
+    ],
+    weaknesses: [
+      "A national data center moratorium would hand AI leadership to China on a silver platter — unilateral disarmament in the most consequential technology race of the century",
+      "Breaking up AI companies shows a fundamental misunderstanding of how AI development works — scale and compute concentration are technical requirements, not just corporate choices",
+      "The robot tax would drive AI investment offshore and punish companies for improving productivity, the engine of economic growth that has raised living standards for centuries",
+      "None of these proposals have any realistic path to passage — they are messaging documents for a presidential campaign, not serious legislative efforts",
+      "A reduced workweek mandate ignores that many AI-augmented workers are more productive and want to work more, not less — this is paternalism dressed up as solidarity",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 80, y: 75 },
       "prevention-authority": { x: 30, y: 30 },
@@ -156,6 +226,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Worker-centered with market-compatible mechanisms. Khanna explicitly rejects Luddism while insisting on structural mechanisms -- board representation, tax incentives, mandatory verification -- that embed worker and community interests into AI governance. His approach is more market-compatible than Sanders' but more structurally interventionist than Kelly's.",
+    strengths: [
+      "Worker representation on AI company boards embeds labor interests directly into corporate decision-making rather than relying on after-the-fact regulation",
+      "Tax credits for profit-sharing create market-compatible incentives that align corporate interests with worker welfare",
+      "Community benefit requirements for data center locations address local extraction that national-level proposals ignore",
+      "Mandatory third-party verification of advanced models establishes independent accountability without creating a government testing bureaucracy",
+      "Explicitly rejects Luddism while demanding structural protections — a politically viable middle ground that could actually build a coalition",
+    ],
+    weaknesses: [
+      "Seven principles is not a legislative proposal — it is a press release from a congressman representing Silicon Valley, designed to sound progressive without threatening his donors",
+      "Worker board representation has failed everywhere it has been tried in the U.S. — it is a European model that does not translate to American corporate governance norms",
+      "Keeping human drivers in trucks 'even as autonomous systems improve' is a Luddite position disguised as concern for workers — it mandates inefficiency and blocks safety improvements",
+      "Community benefit requirements are unfunded mandates that will simply redirect data center construction to jurisdictions willing to waive them",
+      "Mandatory third-party verification with no details on who pays, who verifies, and what standards apply is an empty promise that sounds tough but delivers nothing",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 75, y: 80 },
       "prevention-authority": { x: 35, y: 40 },
@@ -183,6 +267,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Iterative, transparency-driven, with voluntary alignment toward federal standards. California's shift from SB 1047's mandate-heavy approach to SB 53's transparency-first model reflects the political difficulty of imposing pre-deployment requirements on frontier developers headquartered in the state. Disclosure over prohibition is the guiding principle.",
+    strengths: [
+      "Transparency-first approach is politically achievable where SB 1047's mandate-heavy predecessor was not — iterative governance that can actually be implemented",
+      "The $500M revenue threshold targets only the largest frontier developers, avoiding burdens on startups and academic researchers",
+      "Critical safety incident reporting with a 24-hour window for imminent harm creates real accountability for the most dangerous failures",
+      "Alignment toward CAISI standards signals willingness to harmonize with federal frameworks, reducing fragmentation risk",
+      "Demonstrates that state-level AI governance can evolve in response to industry and political feedback without abandoning the regulatory project",
+    ],
+    weaknesses: [
+      "SB 53 is the tombstone of SB 1047 — California had the chance to set a real safety standard and instead caved to industry lobbying, producing a disclosure regime with no enforcement teeth",
+      "Transparency reports are a compliance theater — companies will disclose what makes them look good and obscure what does not, and there is no mechanism to verify accuracy",
+      "No pre-deployment testing, no kill switch, no liability — SB 53 asks companies to tell us about dangerous AI after they have already released it to the public",
+      "The $500M threshold conveniently exempts every AI startup in the state, creating a loophole large enough to drive a frontier model through",
+      "By retreating from SB 1047, California signaled to every other state that industry pressure works — making meaningful state-level regulation harder everywhere",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 30, y: 75 },
       "prevention-authority": { x: 20, y: 30 },
@@ -210,6 +308,20 @@ export const proposals: Proposal[] = [
     ],
     regulatoryPhilosophy:
       "Compliance-oriented with meaningful penalties. New York's approach is notably more enforcement-heavy than California's SB 53, with specific dollar penalties and shorter reporting windows. The RAISE Act's alignment with CAISI standards signals willingness to harmonize with federal frameworks.",
+    strengths: [
+      "Specific dollar penalties ($1M initial, $3M repeat) create real financial consequences rather than relying on transparency alone",
+      "72-hour incident reporting window is tighter than California's 15-day standard, creating faster public awareness of safety failures",
+      "Mandatory public disclosure of safety protocols lets independent researchers and journalists hold companies accountable",
+      "Administrative, technical, and physical cybersecurity protections address the full spectrum of AI system vulnerabilities",
+      "CAISI alignment signals readiness to harmonize with federal standards, positioning New York as a constructive partner rather than a rogue regulator",
+    ],
+    weaknesses: [
+      "$1M penalties are a rounding error for companies with $500M+ in revenue — this is the appearance of enforcement without the substance, a parking ticket for a corporation",
+      "No pre-deployment testing means New York waits for harm to occur before acting — a fundamentally reactive framework that treats the public as guinea pigs",
+      "Zero worker protection provisions in a state where AI is already displacing financial services, media, and legal workers by the thousands",
+      "The $500M revenue threshold means this law applies to roughly five companies — it is a symbolic gesture, not comprehensive governance",
+      "Compliance-oriented regulation favors companies with large legal departments over innovative competitors, further entrenching incumbent dominance",
+    ],
     chartPositions: {
       "enforcement-scope": { x: 35, y: 80 },
       "prevention-authority": { x: 25, y: 25 },

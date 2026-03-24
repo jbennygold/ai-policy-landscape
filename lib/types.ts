@@ -19,6 +19,8 @@ export interface Proposal {
   summary: string;
   keyProvisions: string[];
   regulatoryPhilosophy: string;
+  strengths: string[];
+  weaknesses: string[];
   chartPositions: Record<ChartSlug, { x: number; y: number }>;
 }
 
