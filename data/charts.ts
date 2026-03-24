@@ -11,7 +11,7 @@ export const charts: Chart2x2[] = [
     yLow: "Voluntary / Industry-led",
     yHigh: "Mandatory / Government-enforced",
     readingNote:
-      "The upper-right quadrant (mandatory + broad) is where the most interventionist proposals cluster -- the Blackburn bill ends up here despite its deregulatory branding, alongside Khanna and New York's proposed AI Act. The lower-left (voluntary + narrow) is where the White House and OpenAI sit, though OpenAI's push for mandatory federal testing pulls it toward the upper quadrant. Sanders appears in the lower-right because his moratorium and structural proposals are broad in scope but operate through mechanisms (moratoriums, tax policy, antitrust) rather than traditional regulatory compliance.",
+      "The upper-right quadrant (mandatory + broad) is where the most interventionist proposals cluster -- the Blackburn bill ends up here despite its deregulatory branding, alongside Sanders, Khanna, and New York's proposed AI Act. The lower-left (voluntary + narrow) is where the White House and OpenAI sit, though OpenAI's push for mandatory federal testing pulls it toward the upper quadrant. Sanders lands in the upper-right because his proposals -- moratoriums, antitrust breakups, robot taxes -- are government-enforced and economy-wide in scope, even though they use structural tools rather than traditional regulatory compliance.",
   },
   {
     slug: "prevention-authority",

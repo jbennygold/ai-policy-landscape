@@ -106,7 +106,7 @@ export const proposals: Proposal[] = [
       "enforcement-scope": { x: 65, y: 25 },
       "prevention-authority": { x: 65, y: 25 },
       "innovation-worker": { x: 80, y: 75 },
-      "preemption-obligations": { x: 30, y: 30 },
+      "preemption-obligations": { x: 55, y: 30 },
     },
   },
   {
@@ -130,10 +130,10 @@ export const proposals: Proposal[] = [
     regulatoryPhilosophy:
       "Structural intervention and democratic control. Sanders views AI not as a technology policy problem but as a power and inequality problem. His proposals -- moratoriums, breakups, robot taxes -- are tools of political economy, not technical governance. He is the only major voice calling for a pause in AI infrastructure buildout.",
     chartPositions: {
-      "enforcement-scope": { x: 80, y: 20 },
+      "enforcement-scope": { x: 80, y: 75 },
       "prevention-authority": { x: 30, y: 30 },
       "innovation-worker": { x: 85, y: 15 },
-      "preemption-obligations": { x: 25, y: 20 },
+      "preemption-obligations": { x: 80, y: 15 },
     },
   },
   {
