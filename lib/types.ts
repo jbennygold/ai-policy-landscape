@@ -2,6 +2,7 @@ export type ProposalSlug =
   | "wh-framework"
   | "blackburn"
   | "openai-lehane"
+  | "openai-industrial"
   | "kelly"
   | "sanders"
   | "khanna"
