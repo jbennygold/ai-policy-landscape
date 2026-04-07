@@ -182,6 +182,55 @@ New York's Responsible AI Safety and Education Act establishes reporting and saf
 
 ---
 
+### 9. OpenAI — Industrial Policy for the Intelligence Age (April 2026)
+
+OpenAI's most expansive policy document to date, moving well beyond its earlier safety-focused Lehane position to propose a comprehensive industrial policy agenda for the transition to superintelligence. Organized in two pillars: building an open economy with broad participation and shared prosperity, and building a resilient society through safety systems, alignment, and governance. The framing explicitly invokes the Progressive Era and the New Deal as precedents for the scale of institutional response required.
+
+**Key provisions (Open Economy pillar):**
+
+- Public Wealth Fund providing every citizen a direct stake in AI-driven economic growth, distributed as periodic returns
+- Modernized tax base shifting from labor/payroll taxes toward capital gains, corporate income, and taxes on automated labor
+- Adaptive safety nets that automatically scale up when displacement metrics exceed pre-defined thresholds, then phase out as conditions stabilize
+- Portable benefits (healthcare, retirement, training) decoupled from any single employer
+- 32-hour / four-day workweek pilots with no loss in pay, converting AI efficiency gains into worker time
+- Worker voice mechanisms giving employees formal input on workplace AI deployment
+- "Right to AI" treating model access as foundational like literacy or electricity
+- Accelerated grid expansion via public-private partnerships, with data centers paying their own way on energy
+
+**Key provisions (Resilient Society pillar):**
+
+- Pre- and post-deployment auditing of frontier models for CBRN and cyber risks, with CAISI as the anchor institution
+- Auditing requirements scoped narrowly to "a small number of companies and the most advanced models" to preserve smaller-developer ecosystem
+- Global network of AI Safety Institutes for international information-sharing and coordinated evaluation
+- Mission-aligned corporate governance (Public Benefit Corporations) for frontier AI companies
+- Model-containment playbooks for scenarios where dangerous systems cannot be recalled
+- Incident reporting (including near-misses) emphasizing learning over punishment
+- Mechanisms for structured public input into model specifications and evaluation frameworks
+
+**Regulatory philosophy**: Ambitious public-private industrial policy modeled on the Progressive Era and New Deal. The document treats AI not as a narrow technology policy problem but as a civilizational transition requiring new social contracts. It endorses market mechanisms but argues markets alone are insufficient, calling for government to shape incentives, build institutions, and redistribute gains. Notably couples strong safety and alignment proposals with equally strong economic redistribution mechanisms — a broader scope than any other industry position in the current debate. Conspicuously avoids the federal preemption debate that was central to the earlier Lehane position, and contains no antitrust or structural-power proposals.
+
+---
+
+### 10. Center for Humane Technology — The AI Roadmap (March 2026)
+
+The Center for Humane Technology's most comprehensive AI policy document, structured around seven principles for how AI should be built, deployed, and governed. The Roadmap operates across three intervention domains — norms, laws, and product design — arguing that no single reform is sufficient and that change requires layered, simultaneous pressure on the AI development paradigm. CHT explicitly draws parallels to the Big Tobacco and nuclear weapons movements, framing its theory of change as identifying high-leverage intervention points and applying coordinated civil society pressure across them. Unlike industry or legislative proposals, this is a civil society document setting expectations for what governance should look like rather than introducing specific bills.
+
+**The seven principles:**
+
+1. **AI should be built safely and transparently** — mandatory pre-deployment testing and risk management; standardized reporting; whistleblower protections for all AI employees and contractors (not just those working on catastrophic risk); independent audit and certification schemes
+2. **AI companies owe a duty of care to the public** — statutory clarification that AI is a *product* subject to product liability (not a service or legal person); strategic litigation; new fiduciary-like duties for AI developers
+3. **AI design should center human well-being** — federal chatbot design standards focused on psychosocial harms; enhanced protections for minors against anthropomorphic AI; limits on engagement-maximizing design features; explicit transparency when users are interacting with AI
+4. **AI should not automate away meaningful work and human dignity** — flip the tax code to reward labor retention and upskilling over capital expenditure; AI-company-funded economic reforms; new apprenticeship and residency-style training models
+5. **AI innovation should not come at the expense of rights and freedom** — right to cognitive liberty; expanded publicity and likeness rights for all (not just celebrities); opt-in (not opt-out) for training data inclusion; firm limits on biometric tracking and surveillance; rejection of AI legal personhood
+6. **AI should have internationally agreed-upon limits** — international red lines on recursive self-improvement and autonomous weapons; technical verification mechanisms modeled on nuclear nonproliferation; meaningful human control over kill-chain decisions
+7. **AI power should be balanced in society** — upgraded antitrust enforcement targeting AI consolidation; lobbying transparency and limits on AI political spending; democratic ownership models (cooperative governance, worker/user equity stakes)
+
+**Five "first steps" CHT identifies as immediately actionable:** (1) pass the AI LEAD Act establishing federal product liability for AI; (2) limit anthropomorphic and engagement-maximizing chatbot design; (3) pass the NO FAKES Act for likeness control; (4) pass the AI Whistleblower Protection Act; (5) demand politicians prioritize public over industry on data centers, jobs, and child safety.
+
+**Regulatory philosophy**: Civil-society systems-change approach combining norms, laws, and product design. CHT explicitly rejects the framing that any single intervention can fix AI, arguing instead for layered pressure modeled on the campaigns against Big Tobacco and nuclear weapons. The philosophy treats the AI race itself — the "if I don't build it, someone else will" incentive structure — as the root problem, and seeks to change the underlying paradigm rather than negotiate within it. Notably ecumenical: it endorses product liability (a market mechanism), antitrust reform (a structural mechanism), and international red lines (a treaty mechanism) as complementary rather than competing approaches. CHT explicitly opposes federal preemption of state AI laws, noting that the industry has "moved to lock in political power, backing measures like a moratorium on state AI legislation."
+
+---
+
 ## Part II: Comparative Analysis
 
 ### Dimension 1: Governance Structure
