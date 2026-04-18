@@ -4,6 +4,7 @@ export type ProposalSlug =
   | "openai-lehane"
   | "openai-industrial"
   | "cht-roadmap"
+  | "warner"
   | "kelly"
   | "sanders"
   | "khanna"
