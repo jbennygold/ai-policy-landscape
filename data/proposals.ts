@@ -255,6 +255,47 @@ export const proposals: Proposal[] = [
     },
   },
   {
+    slug: "bores-dividend",
+    name: "Alex Bores — The AI Dividend",
+    shortName: "Bores AI Dividend",
+    sponsor: "NY Assemblymember Alex Bores",
+    year: "2026",
+    color: "#f97316",
+    primaryFrame: "Contingency-based economic insurance",
+    summary:
+      "A federal policy proposal from the New York Assemblymember who authored the RAISE Act, now pitching a contingency-based direct payment program designed to activate automatically if AI meaningfully displaces American workers. The AI Dividend is explicitly framed as 'fire insurance' — not a prediction that mass unemployment will occur, but preparation in case it does. The proposal is notable for three novel funding mechanisms: a token tax on AI computation, federal equity warrants in frontier AI companies (out-of-the-money, exercisable only if companies multiply dramatically in value), and tax reform eliminating the accelerated depreciation subsidy for AI capital that currently makes automation cheaper than hiring. Revenue flows to three buckets: direct payments to Americans, workforce transition and education investment, and public AI safety/oversight infrastructure. Bores frames the timing urgency around a closing political window — demanding equity stakes in AI companies after they have already captured the value is far harder than structuring it now.",
+    keyProvisions: [
+      "Direct payments to Americans triggered by economic conditions — sustained labor force participation declines, wage compression, or AI-driven productivity gains without corresponding job growth",
+      "Token tax: a per-unit tax on AI computation (tokens) that scales automatically as AI adoption scales",
+      "Federal equity warrants in frontier AI firms — out-of-the-money, exercisable only if companies multiply dramatically, creating a windfall for the public precisely when displacement is worst",
+      "Tax reform eliminating accelerated depreciation for AI capital investment that displaces labor — fixing the current ~5% tax on robots vs. ~30% on hiring humans",
+      "Revenue allocated three ways: direct payments, workforce transition/education, and public AI safety and oversight infrastructure",
+      "Activation tied to clear economic triggers rather than political discretion, ensuring the program responds to real-world conditions",
+    ],
+    regulatoryPhilosophy:
+      "Contingency-based economic insurance with automatic triggers. Bores explicitly avoids both the accelerationist claim that AI will only create jobs and the doomer claim that mass unemployment is certain. Instead, the framing is risk management: if there is even a meaningful probability of large-scale displacement, responsible governance requires preparation now while the political window is open and AI companies are still in early growth. The philosophy is closer to options pricing than traditional regulation — the equity warrants pay off precisely in the scenario where the dividend is most needed. Notable for treating the tax code as the primary policy lever: if AI substitutes for labor rather than complementing it, the current tax system is actively subsidizing job elimination.",
+    strengths: [
+      "The equity warrant structure is genuinely novel — it creates automatic fiscal alignment where the government's windfall is largest exactly when displacement is worst, without diluting AI company shares unless they succeed enormously",
+      "The token tax is the first concrete proposal to tax AI at the unit of computation rather than the corporate level, creating a funding mechanism that scales automatically with adoption without requiring new legislation each cycle",
+      "Framing as 'insurance, not punishment' is politically deft — it sidesteps the innovation-vs-regulation frame that paralyzes most AI policy debates and makes the proposal legible to both business and labor audiences",
+      "The closing-window timing argument is substantively correct: structuring equity participation in AI companies is orders of magnitude easier before they reach $10T valuations than after",
+      "Bores has actual legislative credibility on AI — he authored the RAISE Act that passed in New York, giving this proposal a concrete track record to point to rather than being purely aspirational",
+    ],
+    weaknesses: [
+      "A state assemblymember's policy paper for a congressional race is not legislation — there are no bill numbers, no committee referrals, no CBO score, and no co-sponsors; this is a campaign document dressed up as policy",
+      "The token tax is trivially evadable: AI companies would simply restructure computation to minimize taxable units, move inference offshore, or redefine what constitutes a 'token' — the analog of the carried-interest loophole for compute",
+      "Federal equity warrants in private companies have no legal precedent and would face immediate Fifth Amendment takings challenges — the government cannot compel private equity participation without triggering constitutional litigation that would delay implementation by years",
+      "Economic triggers sound precise but are politically manipulable in both directions — administrations hostile to the program can redefine thresholds to prevent activation, while sympathetic ones can cherry-pick metrics to trigger it prematurely",
+      "The proposal is silent on how direct payments interact with existing safety net programs (SNAP, Medicaid, unemployment insurance, SSDI) — layering a new cash benefit on top of a patchwork system without addressing integration creates administrative chaos and potential benefit cliffs",
+    ],
+    chartPositions: {
+      "enforcement-scope": { x: 55, y: 40 },
+      "prevention-authority": { x: 60, y: 20 },
+      "innovation-worker": { x: 65, y: 50 },
+      "preemption-obligations": { x: 50, y: 30 },
+    },
+  },
+  {
     slug: "kelly",
     name: 'Sen. Mark Kelly — "AI for America" Roadmap',
     shortName: "Kelly",
