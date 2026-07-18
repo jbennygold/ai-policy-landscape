@@ -4,7 +4,6 @@ import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Nav } from "@/components/nav";
 import { Footer } from "@/components/footer";
-import { ChatDrawer } from "@/components/chat-drawer";
 
 export const metadata: Metadata = {
   title: "AI Policy Landscape",
@@ -29,7 +28,6 @@ export default function RootLayout({
         <Nav />
         {children}
         <Footer />
-        <ChatDrawer />
       </body>
     </html>
   );
