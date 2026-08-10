@@ -32,13 +32,14 @@ export default function Home() {
           </p>
           <p>
             This analysis maps the current landscape of major AI regulation
-            proposals across three analytical dimensions: governance structure
+            proposals across four analytical dimensions: governance structure
             (who regulates and how), scope and application (what gets regulated
-            and when), and political positioning (the underlying theory of the
-            problem). It examines {proposals.length} proposals in detail,
-            identifies the axes
-            of agreement and disagreement, and places them on comparative
-            frameworks to reveal the emerging contours of the debate.
+            and when), political positioning (the underlying theory of the
+            problem), and industry layers (which part of the AI industry
+            actually bears the cost). It examines {proposals.length} proposals
+            in detail, identifies the axes of agreement and disagreement, and
+            places them on comparative frameworks to reveal the emerging
+            contours of the debate.
           </p>
           <p>
             The proposals range from the White House&apos;s light-touch,
@@ -70,9 +71,9 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-6 mt-24">
         <SectionHeading
           title="Axes of Agreement and Disagreement"
-          subtitle="Three dimensions for comparing what the proposals prioritize and where they diverge"
+          subtitle={`${dimensions.length} dimensions for comparing what the proposals prioritize and where they diverge`}
         />
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {dimensions.map((dim) => (
             <Link
               key={dim.slug}

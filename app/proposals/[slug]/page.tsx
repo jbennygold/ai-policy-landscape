@@ -4,6 +4,7 @@ import { proposals } from "@/data/proposals";
 import { charts } from "@/data/charts";
 import { Chart2x2 } from "@/components/chart-2x2";
 import { ProposalBadge } from "@/components/proposal-badge";
+import { LayerIncidence } from "@/components/layer-incidence";
 
 export function generateStaticParams() {
   return proposals.map((p) => ({ slug: p.slug }));
@@ -70,6 +71,8 @@ export default async function ProposalPage({
       <p className="mt-4 text-base leading-relaxed text-stone-700">
         {proposal.regulatoryPhilosophy}
       </p>
+
+      <LayerIncidence proposal={proposal} />
 
       {proposal.contrast && (
         <div

@@ -35,6 +35,18 @@ export const proposals: Proposal[] = [
       "Defers copyright questions to courts, effectively stalling protections for creators whose work is already being used to train models without compensation",
       "The 'innovation-first' framing is indistinguishable from the lobbying position of the companies it would regulate, raising serious questions about regulatory capture",
     ],
+    layers: {
+      incidence: {
+        frontier: "none",
+        apps: "indirect",
+        hyperscalers: "secondary",
+        chips: "none",
+      },
+      base:
+        "Data center electricity cost allocation; age assurance",
+      note:
+        "A framework whose net effect is to remove cost rather than impose it. Preemption and regulatory sandboxes are transfers toward the frontier and app layers. The only genuine burden is on the hyperscalers, through the requirement that residential ratepayers not absorb data center electricity costs, which converts a cost the buildout currently externalizes into one the builder carries. Age assurance reaches consumer-facing apps as a compliance cost.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 20, y: 25 },
       "prevention-authority": { x: 75, y: 25 },
@@ -76,6 +88,18 @@ export const proposals: Proposal[] = [
       "As an executive order it is inherently fragile: it creates no statutory institutions, is 'subject to available appropriations,' and can be rescinded by the next administration with a signature",
       "Routing frontier-model access through classified national-security channels concentrates early capability and trust among incumbents and the government, with little transparency or public accountability",
     ],
+    layers: {
+      incidence: {
+        frontier: "indirect",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "None — the order forecloses mandatory obligations",
+      note:
+        "The order is unique on this map for assessing nothing on anyone. Its central legal move is to prohibit mandatory licensing, preclearance, or permitting, and its only contact with the frontier layer is a voluntary invitation to share pre-release access. No layer bears a cost it did not agree to, which is precisely the design.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 25, y: 15 },
       "prevention-authority": { x: 75, y: 30 },
@@ -117,6 +141,18 @@ export const proposals: Proposal[] = [
       "Aggressive federal preemption wipes out state laws that are already working, replacing democratic experimentation with a one-size-fits-all federal mandate",
       "Developer and deployer liability frameworks are so broadly drawn that they will chill open-source development and academic research, concentrating AI power further among deep-pocketed incumbents",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "primary",
+        hyperscalers: "indirect",
+        chips: "none",
+      },
+      base:
+        "Developer and deployer conduct; Section 230 repeal",
+      note:
+        "The only proposal that names developers and deployers as separate liable parties, which lands it squarely on the frontier and app layers at once. Section 230 repeal is an app-layer event above all — it reaches every platform that hosts or surfaces AI output, not the labs that trained the model. Hyperscalers are touched only as pass-through, and the chip layer not at all.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 80, y: 85 },
       "prevention-authority": { x: 70, y: 70 },
@@ -158,6 +194,18 @@ export const proposals: Proposal[] = [
       "Classified testing creates an opaque system where the public has no way to verify that safety evaluations are rigorous or independent",
       "The position conveniently ensures that only the largest, best-resourced companies can navigate federal compliance, locking out smaller competitors and open-source alternatives",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Frontier model developers, via mandatory pre-deployment testing",
+      note:
+        "Nominally the most burdensome proposal for the frontier layer, and proposed by a member of it. Mandatory classified testing is a fixed compliance cost, which is regressive across firm size: it is an annoyance at OpenAI's scale and a barrier at a startup's. This is the layer's characteristic move — accept regulation that raises the cost of entry — and no other layer pays anything.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 25, y: 30 },
       "prevention-authority": { x: 80, y: 90 },
@@ -201,6 +249,18 @@ export const proposals: Proposal[] = [
       "The document calls for 'mission-aligned corporate governance' while OpenAI itself just completed a controversial conversion from nonprofit to capped-profit, undermining its credibility as a governance model",
       "Every proposal that could constrain OpenAI (auditing, testing) is scoped to 'a small number of companies and the most advanced models' — conveniently the regulatory moat that protects incumbents from competition",
     ],
+    layers: {
+      incidence: {
+        frontier: "secondary",
+        apps: "indirect",
+        hyperscalers: "primary",
+        chips: "secondary",
+      },
+      base:
+        "Capital ownership, via modernized taxation of capital over labor",
+      note:
+        "The document's tax proposal is the tell. A frontier lab proposing to shift the burden from labor toward capital is proposing to tax the layers that own physical assets more heavily than the one that increasingly rents them. Incidence lands on the hyperscalers and, through them, on the chip layer that sells the assets. CBRN auditing is a real but narrow frontier cost, scoped to a small number of companies and models.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 60, y: 55 },
       "prevention-authority": { x: 70, y: 75 },
@@ -242,6 +302,18 @@ export const proposals: Proposal[] = [
       "The narrow CBRN / cyber / RSI catastrophic-risk framing sidelines the harms people actually experience — discrimination, fraud, labor displacement, deepfakes — and drops the worker and redistribution agenda OpenAI itself championed in its Industrial Policy document",
       "Heavy reliance on classified evaluation and trade-secret redactions leaves the public unable to verify whether any of this 'democratic governance' is actually rigorous or independent",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "secondary",
+      },
+      base:
+        "Frontier developers above a capability threshold; export controls",
+      note:
+        "Evaluations, third-party audits, incident reporting, and weight security all assess the frontier layer, and the blueprint accepts them in exchange for preemption. The overlooked line item is export controls to protect the compute advantage: it is the only instrument anywhere on this map that reaches the chip layer, and it arrives framed as national security rather than as revenue, which is why the chip layer opposes it using the same patriotic vocabulary as its proponents.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 22, y: 62 },
       "prevention-authority": { x: 82, y: 82 },
@@ -290,6 +362,18 @@ export const proposals: Proposal[] = [
       "The norms-laws-design theory of change is vague enough to be unfalsifiable — every advocacy outcome can be claimed as progress while the AI race accelerates regardless",
       "Sidesteps the question of who decides what 'humane' means — by substituting CHT's editorial judgment for democratic process, it risks the same paternalism it accuses tech companies of",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "primary",
+        hyperscalers: "secondary",
+        chips: "indirect",
+      },
+      base:
+        "Product liability; engagement-driven design; capital expenditure",
+      note:
+        "Reaches the frontier through product liability and mandatory testing, and the app layer through design standards and duty of care for chatbots — the app layer is arguably the real target, since CHT's core objection is to engagement optimization rather than to model capability. The proposed tax flip, rewarding labor retention over capital expenditure, is a hyperscaler-incidence instrument attached to a consumer-protection agenda.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 75, y: 80 },
       "prevention-authority": { x: 50, y: 75 },
@@ -340,6 +424,18 @@ export const proposals: Proposal[] = [
       "Warner's earlier workforce package remains what it always was — a commission that will spend 13 months studying displacement while it happens, and quarterly corporate self-reports that companies will game by classifying AI-driven layoffs as ordinary restructuring",
       "For a package built on disclosure and accountability, exempting the Economy of the Future Commission from FACA and FOIA is a conspicuous carve-out from the transparency the agenda demands of everyone else",
     ],
+    layers: {
+      incidence: {
+        frontier: "secondary",
+        apps: "secondary",
+        hyperscalers: "primary",
+        chips: "none",
+      },
+      base:
+        "Data center bonus depreciation, conditioned on efficiency standards",
+      note:
+        "The clearest hyperscaler-incidence proposal in the landscape, and the only one that names its base precisely. Conditioning bonus depreciation on efficiency standards and dedicating the recovered revenue to worker transition assesses the layer that owns the buildings and the machines. The AI AGENT Act reaches the app and platform layer through gatekeeper access rules, and secure testing environments reach the frontier, but the money comes from capacity.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 72, y: 68 },
       "prevention-authority": { x: 80, y: 58 },
@@ -381,6 +477,18 @@ export const proposals: Proposal[] = [
       "Economic triggers sound precise but are politically manipulable in both directions — administrations hostile to the program can redefine thresholds to prevent activation, while sympathetic ones can cherry-pick metrics to trigger it prematurely",
       "The proposal is silent on how direct payments interact with existing safety net programs (SNAP, Medicaid, unemployment insurance, SSDI) — layering a new cash benefit on top of a patchwork system without addressing integration creates administrative chaos and potential benefit cliffs",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "primary",
+        hyperscalers: "primary",
+        chips: "indirect",
+      },
+      base:
+        "Tokens consumed; AI capital depreciation; frontier enterprise value",
+      note:
+        "Three instruments, three different layers, which is why this proposal is hard to place and easy to misread as a single tax on AI. The token tax sounds like a tax on AI companies but is a tax on AI buyers, so its incidence is on the app layer and its enterprise customers. Eliminating accelerated depreciation for AI capital assesses whoever owns the machines, which is the hyperscalers. The equity warrants are the only instrument in this landscape aimed squarely and exclusively at the frontier layer.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 55, y: 40 },
       "prevention-authority": { x: 60, y: 20 },
@@ -422,6 +530,18 @@ export const proposals: Proposal[] = [
       "Frames AI disruption as a manageable adjustment problem when the scale of displacement could be civilizational, offering band-aids for bullet wounds",
       "The bipartisan framing is a way to avoid taking hard positions on preemption, liability, or any issue where industry might push back",
     ],
+    layers: {
+      incidence: {
+        frontier: "unspecified",
+        apps: "unspecified",
+        hyperscalers: "unspecified",
+        chips: "unspecified",
+      },
+      base:
+        "Undefined — the Horizon Fund names a payer but not a base",
+      note:
+        "The Horizon Fund is described as financed by leading AI companies, which names a payer without naming a base. Assessed on revenue, it lands on the frontier. Assessed on compute consumed, it lands on the app layer and passes to the hyperscalers. Assessed on headcount displaced, it lands on enterprise adopters and reaches no AI company at all. The base is the whole policy, and it is currently blank — which makes this the proposal most worth pressing a sponsor on.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 65, y: 25 },
       "prevention-authority": { x: 65, y: 25 },
@@ -463,6 +583,18 @@ export const proposals: Proposal[] = [
       "None of these proposals have any realistic path to passage — they are messaging documents for a presidential campaign, not serious legislative efforts",
       "A reduced workweek mandate ignores that many AI-augmented workers are more productive and want to work more, not less — this is paternalism dressed up as solidarity",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "indirect",
+        hyperscalers: "primary",
+        chips: "secondary",
+      },
+      base:
+        "Frontier development and data center buildout, via moratorium",
+      note:
+        "A moratorium aimed at infrastructure rather than models splits its incidence between the frontier layer, whose development it halts, and the hyperscalers, who carry nearly all of the physical exposure and hold the lease commitments. Antitrust breakups target frontier and platform concentration. The chip layer is the quiet loser: a pause collapses the demand curve it sells into, which is why it is the one layer that will say so out loud.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 80, y: 75 },
       "prevention-authority": { x: 30, y: 30 },
@@ -507,6 +639,18 @@ export const proposals: Proposal[] = [
       "Standing up a new federal AI agency on the NRC model would take a decade Congress doesn't have, and would calcify AI regulation around whatever frontier capabilities exist on day one",
       "The wealth-tax funding mechanism has failed politically every time it has been proposed and faces serious constitutional challenges — pinning a generational jobs program to it is wishful budgeting",
     ],
+    layers: {
+      incidence: {
+        frontier: "secondary",
+        apps: "primary",
+        hyperscalers: "primary",
+        chips: "indirect",
+      },
+      base:
+        "Labor-displacing token use; AI capital; data generation; wealth",
+      note:
+        "Four instruments that look like one agenda. The token tax on labor-displacing AI use is a tax on buyers, landing on the app layer and enterprise adopters. The data dividend attaches to data generation, which means it lands on the consumer platforms and passes over the labs and the clouds entirely — AI policy that taxes the app layer's oldest business. The tax flip and the data center community obligations assess the hyperscalers. Only the wealth tax reaches frontier owners, and it reaches them as individuals rather than as a layer.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 80, y: 85 },
       "prevention-authority": { x: 55, y: 55 },
@@ -566,6 +710,18 @@ export const proposals: Proposal[] = [
       title: "Two token taxes, two theories of what to do with the money",
       body: "Casar and Bores converge on the same novel tax base — computation measured in tokens — and diverge completely on what it buys. Bores routes revenue to direct payments, treating displacement as an income problem to be solved with cash, and pairs the token tax with federal equity warrants so the public captures upside from the firms doing the displacing. Casar routes every dollar to wages for public work, treating displacement as an employment problem to be solved with jobs, and adds no equity claim at all. The rate structures encode the same split: Bores triggers payments on economic conditions after the fact, while Casar's rate schedule escalates continuously with U-4 unemployment so the tax itself is the trigger. Casar also has what Bores does not — an actual bill number, committee referrals, and statutory text defining the tax base, which is where the token-tax concept has always been most vulnerable.",
     },
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "secondary",
+        hyperscalers: "indirect",
+        chips: "indirect",
+      },
+      base:
+        "Tokens processed and AI service revenue, assessed on the model developer",
+      note:
+        "The distinction that separates this from the Bores and Khanna token taxes is who the statute names. Section 4491 assesses the covered person — whoever develops a foundation model, sells access to one, or modifies an open-weight model — rather than the buyer, which makes it the closest thing in this landscape to a tax whose legal incidence sits on the frontier layer itself. Economic incidence still passes to the app layer through inference prices, and the internal-use trigger pulls in any enterprise that self-hosts a model to cut headcount, making it a covered person in its own right. Training compute remains untaxed.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 88, y: 95 },
       "prevention-authority": { x: 85, y: 8 },
@@ -607,6 +763,18 @@ export const proposals: Proposal[] = [
       "The $500M threshold conveniently exempts every AI startup in the state, creating a loophole large enough to drive a frontier model through",
       "By retreating from SB 1047, California signaled to every other state that industry pressure works — making meaningful state-level regulation harder everywhere",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Frontier developers above a $500M revenue threshold",
+      note:
+        "A revenue threshold is a layer selector. At $500M it reaches the frontier layer and nothing else, and because the obligation is disclosure rather than assessment, the cost is compliance overhead rather than a transfer. No other layer is touched.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 30, y: 75 },
       "prevention-authority": { x: 20, y: 30 },
@@ -648,6 +816,18 @@ export const proposals: Proposal[] = [
       "The $500M revenue threshold means this law applies to roughly five companies — it is a symbolic gesture, not comprehensive governance",
       "Compliance-oriented regulation favors companies with large legal departments over innovative competitors, further entrenching incumbent dominance",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Frontier developers above a $500M revenue threshold",
+      note:
+        "Same selector as SB 53 and the same result: the frontier layer alone, reached through reporting obligations backed by monetary penalties. The app, hyperscaler, and chip layers have no exposure, which is why neither state law drew organized opposition from them.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 35, y: 80 },
       "prevention-authority": { x: 25, y: 25 },
@@ -690,6 +870,18 @@ export const proposals: Proposal[] = [
       "IVO immunity from loss claims, combined with broad trade-secret and security redactions, could hollow out accountability by letting developers and their paid auditors control what the public and regulators ever see",
       "The preemption line itself is contestable: it bars only state laws 'specifically targeting' model development while preserving deployment and use regulation, but the development/deployment boundary blurs at exactly the points that matter — pre-deployment safety testing and substantial fine-tuning — inviting years of characterization litigation over which state laws actually survive",
     ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "secondary",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Frontier developers above $500M; employers conducting AI-driven layoffs",
+      note:
+        "The frontier-governance title uses the same $500M selector as the state laws it federalizes, so its transparency and audit obligations land on the frontier layer. Title II is the interesting part: amending the WARN Act to require disclosure when AI is a substantial factor in a mass layoff assesses the employer doing the deploying, not the developer selling the model, which reaches the app layer and enterprise adopters. Two titles, two different layers.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 42, y: 65 },
       "prevention-authority": { x: 70, y: 35 },

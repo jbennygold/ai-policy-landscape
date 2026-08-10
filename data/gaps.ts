@@ -22,6 +22,11 @@ export const gaps: GapTopic[] = [
       "Sanders' moratorium is the only proposal that directly addresses the environmental footprint of AI infrastructure. The White House framework addresses energy through the lens of ratepayer protection but not environmental sustainability.",
   },
   {
+    title: "Training compute and the chip layer",
+    description:
+      "No proposal taxes training compute specifically, which is the one instrument that would fall on the frontier layer alone. And nothing reaches the chip layer except export controls, which are framed as national security rather than as revenue. The largest single concentration of AI wealth is the least exposed to every economic proposal in circulation.",
+  },
+  {
     title: "Concentration and competition",
     description:
       "Beyond Sanders' breakup calls, no proposal addresses the competitive dynamics of AI development -- the concentration of compute, data, and talent among a small number of firms and its implications for innovation and governance.",
