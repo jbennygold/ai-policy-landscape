@@ -18,6 +18,10 @@ export default async function ProposalPage({
   const proposal = proposals.find((p) => p.slug === slug);
   if (!proposal) return notFound();
 
+  const contrastTarget = proposal.contrast
+    ? proposals.find((p) => p.slug === proposal.contrast!.slug)
+    : null;
+
   return (
     <div className="mx-auto max-w-3xl px-6 py-12">
       {/* Accent bar */}
@@ -66,6 +70,34 @@ export default async function ProposalPage({
       <p className="mt-4 text-base leading-relaxed text-stone-700">
         {proposal.regulatoryPhilosophy}
       </p>
+
+      {proposal.contrast && (
+        <div
+          className="mt-10 rounded-lg border-l-4 bg-stone-50 p-6"
+          style={{ borderColor: proposal.color }}
+        >
+          <p className="font-mono text-xs uppercase tracking-wide text-stone-400">
+            In contrast
+          </p>
+          <h2
+            className="mt-1 text-xl font-semibold text-stone-900"
+            style={{ fontFamily: "var(--font-serif)" }}
+          >
+            {proposal.contrast.title}
+          </h2>
+          <p className="mt-3 text-sm leading-relaxed text-stone-700">
+            {proposal.contrast.body}
+          </p>
+          {contrastTarget && (
+            <Link
+              href={`/proposals/${contrastTarget.slug}`}
+              className="mt-4 inline-block text-sm font-medium text-[#1a56db] hover:underline"
+            >
+              Compare with {contrastTarget.shortName} &rarr;
+            </Link>
+          )}
+        </div>
+      )}
 
       <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
         <div>

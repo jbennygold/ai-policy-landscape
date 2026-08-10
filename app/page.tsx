@@ -35,7 +35,8 @@ export default function Home() {
             proposals across three analytical dimensions: governance structure
             (who regulates and how), scope and application (what gets regulated
             and when), and political positioning (the underlying theory of the
-            problem). It examines eight proposals in detail, identifies the axes
+            problem). It examines {proposals.length} proposals in detail,
+            identifies the axes
             of agreement and disagreement, and places them on comparative
             frameworks to reveal the emerging contours of the debate.
           </p>
@@ -56,7 +57,7 @@ export default function Home() {
       <section className="mx-auto max-w-5xl px-6 mt-24">
         <SectionHeading
           title="The Proposals"
-          subtitle="Eight major proposals spanning federal, state, and industry perspectives"
+          subtitle={`${proposals.length} major proposals spanning federal, state, and industry perspectives`}
         />
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
           {proposals.map((proposal) => (

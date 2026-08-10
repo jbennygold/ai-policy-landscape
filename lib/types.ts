@@ -1,16 +1,20 @@
 export type ProposalSlug =
   | "wh-framework"
+  | "wh-ai-eo"
   | "blackburn"
   | "openai-lehane"
   | "openai-industrial"
+  | "openai-blueprint"
   | "cht-roadmap"
   | "warner"
   | "bores-dividend"
   | "kelly"
   | "sanders"
   | "khanna"
+  | "casar-ai-tax"
   | "ca-sb53"
-  | "ny-raise";
+  | "ny-raise"
+  | "gaaia";
 
 export interface Proposal {
   slug: ProposalSlug;
@@ -26,6 +30,12 @@ export interface Proposal {
   strengths: string[];
   weaknesses: string[];
   chartPositions: Record<ChartSlug, { x: number; y: number }>;
+  /** Optional side-by-side contrast with another proposal, rendered as a callout. */
+  contrast?: {
+    slug: ProposalSlug;
+    title: string;
+    body: string;
+  };
 }
 
 export type ChartSlug =
