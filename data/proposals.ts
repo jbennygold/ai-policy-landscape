@@ -47,6 +47,16 @@ export const proposals: Proposal[] = [
       note:
         "A framework whose net effect is to remove cost rather than impose it. Preemption and regulatory sandboxes are transfers toward the frontier and app layers. The only genuine burden is on the hyperscalers, through the requirement that residential ratepayers not absorb data center electricity costs, which converts a cost the buildout currently externalizes into one the builder carries. Age assurance reaches consumer-facing apps as a compliance cost.",
     },
+    dataCenter: {
+      posture: "ratepayer-only",
+      addresses: [
+        "electricity",
+      ],
+      decisionMaker:
+        "Utility regulators, on cost allocation only",
+      summary:
+        "Engages data centers on exactly one question: residential ratepayers must not bear increased electricity costs. Siting, water, emissions, noise, subsidies, and local authority are all left untouched, and the framework's preemption agenda cuts against the state and local rules that currently govern them.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 20, y: 25 },
       "prevention-authority": { x: 75, y: 25 },
@@ -436,6 +446,19 @@ export const proposals: Proposal[] = [
       note:
         "The clearest hyperscaler-incidence proposal in the landscape, and the only one that names its base precisely. Conditioning bonus depreciation on efficiency standards and dedicating the recovered revenue to worker transition assesses the layer that owns the buildings and the machines. The AI AGENT Act reaches the app and platform layer through gatekeeper access rules, and secure testing environments reach the frontier, but the money comes from capacity.",
     },
+    dataCenter: {
+      posture: "conditional",
+      addresses: [
+        "electricity",
+        "water",
+        "air-noise",
+        "tax",
+      ],
+      decisionMaker:
+        "The federal tax code, through conditioned depreciation",
+      summary:
+        "The most precisely engineered instrument aimed at data centers. Mandatory public disclosure of energy, water, emissions, and backup generation, with federal bonus depreciation conditioned on meeting efficiency standards — and the revenue recovered from limiting that subsidy dedicated to the workers the infrastructure displaces.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 72, y: 68 },
       "prevention-authority": { x: 80, y: 58 },
@@ -595,6 +618,19 @@ export const proposals: Proposal[] = [
       note:
         "A moratorium aimed at infrastructure rather than models splits its incidence between the frontier layer, whose development it halts, and the hyperscalers, who carry nearly all of the physical exposure and hold the lease commitments. Antitrust breakups target frontier and platform concentration. The chip layer is the quiet loser: a pause collapses the demand curve it sells into, which is why it is the one layer that will say so out loud.",
     },
+    dataCenter: {
+      posture: "moratorium",
+      addresses: [
+        "siting",
+        "electricity",
+        "water",
+        "air-noise",
+      ],
+      decisionMaker:
+        "The federal government, by halting construction outright",
+      summary:
+        "The only proposal seeking to stop the buildout at national scale rather than condition it. Treats data center expansion as an environmental and energy question first, and is the single proposal that put the environmental footprint of AI infrastructure on the agenda before it became a local political force.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 80, y: 75 },
       "prevention-authority": { x: 30, y: 30 },
@@ -651,11 +687,101 @@ export const proposals: Proposal[] = [
       note:
         "Four instruments that look like one agenda. The token tax on labor-displacing AI use is a tax on buyers, landing on the app layer and enterprise adopters. The data dividend attaches to data generation, which means it lands on the consumer platforms and passes over the labs and the clouds entirely — AI policy that taxes the app layer's oldest business. The tax flip and the data center community obligations assess the hyperscalers. Only the wealth tax reaches frontier owners, and it reaches them as individuals rather than as a layer.",
     },
+    dataCenter: {
+      posture: "conditional",
+      addresses: [
+        "electricity",
+        "water",
+        "jobs",
+      ],
+      decisionMaker:
+        "Federal standards on what a host community is owed",
+      summary:
+        "Accepts the buildout and sets terms: data centers must serve host communities through local hiring, computing resources for schools and libraries, dry cooling to protect water supplies, and payment of their full electricity costs rather than shifting them onto ratepayers.",
+    },
     chartPositions: {
       "enforcement-scope": { x: 80, y: 85 },
       "prevention-authority": { x: 55, y: 55 },
       "innovation-worker": { x: 85, y: 30 },
       "preemption-obligations": { x: 80, y: 20 },
+    },
+  },
+  {
+    slug: "khanna-dc-rights",
+    name: "Rep. Ro Khanna — Data Center Bill of Rights (H. Res. 1471)",
+    shortName: "DC Bill of Rights",
+    sponsor: "Rep. Ro Khanna (D-CA)",
+    year: "2026",
+    color: "#4d7c0f",
+    primaryFrame: "Community consent and local control",
+    summary:
+      "Introduced August 6, 2026 and referred to Energy and Commerce and to the Judiciary, this is a sense-of-the-House resolution asserting that every American and community affected by an AI data center should have the right to transparency, local autonomy, and — stated plainly in the operative text — the right to oppose them. Its findings are the argument: more than 4,400 registered data centers now operate across the United States with at least one facility in every state; developers have used nondisclosure agreements and shell companies to conceal ownership, water use, electricity demand, and tax incentives; AI data centers could consume up to 32 billion gallons of water a year by 2028, with many sited in water-stressed regions; and diesel generators, gas turbines, and cooling systems create air pollution and persistent noise linked to asthma, heart disease, and sleep disruption. The finding that carries the political weight is the last one: construction may create hundreds of well-paying jobs, but even the largest completed facilities often employ fewer than 150 permanent workers. From there the resolution enumerates ten rights, running from a 2,500-foot residential siting ban through enforceable community benefit agreements to clawback provisions on subsidies. It is non-binding and creates nothing — its function is to give the local opposition movement a federal vocabulary.",
+    keyProvisions: [
+      "Right to ban data centers in residential areas and within 2,500 feet of homes, schools, childcare facilities, hospitals, or nursing homes",
+      "Right to reject any proposed data center through a transparent community process",
+      "Right to preserve county and municipal authority to prohibit or regulate data center development without being preempted or overruled by the state",
+      "Right to adopt statewide pauses on new data centers until the state enacts real protections on ratepayer costs, water supplies, and community say",
+      "Right to demand no increase in electricity rates or fees for households or small businesses",
+      "Right to require every data center to run on clean and reliable energy while meeting strict noise and air pollution limits",
+      "Right to an independent, publicly available pre-approval impact report covering electricity demand, utility bills, public health, noise and air pollution, consumer goods prices, rents, and housing availability, plus a full accounting of jobs created and 10-year economic impact",
+      "Right to enforceable community benefit agreements covering affordable housing, neighborhood improvements, water and infrastructure upgrades, public computing resources, local venture capital, workforce training, and permanent technology jobs",
+      "Right to require operators to disclose projected water consumption to local water providers, obtain a written compatibility determination before approval, and file semiannual water usage reports for public review",
+      "Right to require owners, operators, and developers to pay their fair share of state and local taxes, with any exemption or subsidy carrying labor standards, full transparency, and clawback provisions when conditions are not met",
+    ],
+    regulatoryPhilosophy:
+      "Consent, not compensation. Nearly every other proposal that touches data centers accepts the buildout as given and argues about terms — who pays for the power, who discloses the water, who captures the tax revenue. This resolution starts one step earlier and asserts a right to say no, then treats everything else as what a community may demand if it says yes. The jurisdictional target is unusual and easy to miss: the preemption it fights is state preemption of counties and municipalities, not federal preemption of states, which makes it the only item on this map defending the bottom tier of a three-tier system. That reflects where the fight actually is, since state legislatures have been the level most willing to override local siting decisions on behalf of large projects. As an instrument it is the weakest available — a resolution expresses a sense and binds no one — but it is aimed at a movement rather than a statute book, arriving alongside primary victories where data center opposition was a central plank.",
+    strengths: [
+      "It is the only proposal in the landscape that treats the siting decision itself as the thing to be governed, rather than accepting the buildout and negotiating over its externalities",
+      "Defending county and municipal authority against state preemption identifies the level where data center fights are actually being lost, a jurisdictional layer every other proposal ignores",
+      "The pre-approval impact report is unusually well specified — electricity, bills, health, noise, air, consumer prices, rents, housing, and a full jobs accounting over ten years — and would force disclosure of the permanent-employment numbers that developers currently obscure",
+      "Attacking nondisclosure agreements and shell companies goes directly at the mechanism that has kept ownership, water use, and subsidy terms out of public view in the communities bearing the costs",
+      "Clawback provisions tied to labor standards and transparency give subsidy conditions actual teeth, addressing the pattern where tax abatements are granted against job promises that never materialize",
+      "The water provisions — compatibility determinations from local providers plus semiannual public reporting — are the most concrete water accountability requirements anywhere on this map",
+    ],
+    weaknesses: [
+      "It is a sense-of-the-House resolution: it authorizes nothing, funds nothing, preempts nothing, and binds no one, and even full adoption by the House would leave every data center decision exactly where it is today",
+      "The rights it enumerates are overwhelmingly state and local powers that communities already possess — zoning, permitting, utility regulation — so a federal resolution urging their use is a statement of encouragement rather than a grant of authority",
+      "A 2,500-foot residential buffer applied nationally would foreclose siting across most of the developed land near existing transmission and fiber, pushing the buildout toward jurisdictions with the least capacity to negotiate terms rather than reducing it",
+      "Demanding clean energy, strict emissions limits, no ratepayer increases, and large community benefit packages simultaneously ignores that these trade against each other, and the resolution never says which yields when they collide",
+      "The framing invites a straightforward reindustrialization objection: applied consistently, a right to veto energy-intensive infrastructure within 2,500 feet of any home or school is a general anti-siting principle that would also block the transmission, storage, and manufacturing the same coalition wants built",
+      "Nothing here reaches the frontier labs whose demand drives the buildout — the resolution assesses the landlord and leaves the tenant, whose lease commitments actually underwrite the construction, entirely untouched",
+    ],
+    layers: {
+      incidence: {
+        frontier: "indirect",
+        apps: "none",
+        hyperscalers: "primary",
+        chips: "indirect",
+      },
+      base: "Data center siting, power, water, and local tax subsidies",
+      note:
+        "The purest hyperscaler-incidence item on the map, and a useful demonstration that the layer bearing a policy is often not the layer that caused it. Every enumerated right attaches to whoever builds and operates the facility. Frontier labs, whose demand drives the buildout, are reached only indirectly through the lease commitments that transfer the exposure — and the chip layer only through a slower buildout. The app layer, which consumes the capacity all of this exists to supply, carries nothing at all.",
+    },
+    dataCenter: {
+      posture: "local-veto",
+      addresses: [
+        "siting",
+        "electricity",
+        "water",
+        "air-noise",
+        "tax",
+        "jobs",
+        "preemption",
+      ],
+      decisionMaker: "The affected community, through county and municipal authority",
+      summary:
+        "The only item on the map that asserts a right to refuse construction outright, and the only one that defends local authority against state preemption rather than state authority against federal preemption.",
+    },
+    contrast: {
+      slug: "khanna",
+      title: "The same member, two theories of where AI policy happens",
+      body: "Khanna's AI for the People manifesto is a national economic program — a wealth tax, a Future Workforce Administration, a new federal AI regulator on the model of the NRC. The Data Center Bill of Rights inverts every one of those instincts: no federal agency, no federal money, no federal standard, and authority pushed down to counties and municipalities rather than up to Washington. The manifesto's data center plank asks what a community should receive in exchange for hosting one; the resolution asks whether it has to host one at all. Read together they mark the point where AI policy stops being about models and becomes about land, water, and who gets to decide — a question on which the federal government's most useful role may be to stay out of the way.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 45, y: 60 },
+      "prevention-authority": { x: 12, y: 85 },
+      "innovation-worker": { x: 85, y: 10 },
+      "preemption-obligations": { x: 80, y: 5 },
     },
   },
   {

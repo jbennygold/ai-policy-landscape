@@ -11,6 +11,7 @@ export type ProposalSlug =
   | "kelly"
   | "sanders"
   | "khanna"
+  | "khanna-dc-rights"
   | "casar-ai-tax"
   | "ca-sb53"
   | "ny-raise"
@@ -36,6 +37,12 @@ export interface Proposal {
    * incidence question.
    */
   layers: LayerAnalysis;
+  /**
+   * Present only where a proposal says something specific about data center
+   * siting, power, water, or subsidies. Most proposals say nothing, and the
+   * silence is itself part of the analysis.
+   */
+  dataCenter?: DataCenterPosition;
   /** Optional side-by-side contrast with another proposal, rendered as a callout. */
   contrast?: {
     slug: ProposalSlug;
@@ -68,6 +75,36 @@ export interface LayerAnalysis {
   base: string;
   /** Why the burden lands where it does. */
   note: string;
+}
+
+/**
+ * The contested questions in data center politics. A proposal's coverage across
+ * these is usually narrower than its rhetoric suggests.
+ */
+export type DataCenterIssue =
+  | "siting"
+  | "electricity"
+  | "water"
+  | "air-noise"
+  | "tax"
+  | "jobs"
+  | "preemption";
+
+/** Where a proposal sits on the who-decides spectrum, from permissive to prohibitive. */
+export type DataCenterPosture =
+  | "moratorium"
+  | "local-veto"
+  | "conditional"
+  | "disclosure"
+  | "ratepayer-only";
+
+export interface DataCenterPosition {
+  posture: DataCenterPosture;
+  /** Which contested issues the proposal actually reaches. */
+  addresses: DataCenterIssue[];
+  /** Who decides whether a given data center gets built. */
+  decisionMaker: string;
+  summary: string;
 }
 
 export interface Layer {
