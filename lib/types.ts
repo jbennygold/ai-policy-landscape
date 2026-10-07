@@ -9,6 +9,7 @@ export type ProposalSlug =
   | "cht-roadmap"
   | "warner"
   | "cantwell"
+  | "thune-klobuchar"
   | "bores-dividend"
   | "kelly"
   | "sanders"
@@ -17,8 +18,12 @@ export type ProposalSlug =
   | "casar-ai-tax"
   | "gallego"
   | "ca-sb53"
+  | "ca-newsom-eo"
+  | "il-sb315"
   | "ny-raise"
-  | "gaaia";
+  | "gaaia"
+  | "frontier-act"
+  | "lieu-kill-switch";
 
 export interface Proposal {
   slug: ProposalSlug;
@@ -26,6 +31,17 @@ export interface Proposal {
   shortName: string;
   sponsor: string;
   year: string;
+  /**
+   * When the proposal entered the debate — introduced, signed, released, or
+   * first reported — as YYYY-MM-DD, or YYYY-MM where only the month is known.
+   * Required so that the trends page can place every proposal in time.
+   */
+  introduced: string;
+  instrument: Instrument;
+  themes: Theme[];
+  /** The strongest oversight mechanism the proposal contemplates for frontier models. */
+  oversight: OversightLevel;
+  preemption: PreemptionStance;
   color: string;
   primaryFrame: string;
   summary: string;
@@ -53,6 +69,38 @@ export interface Proposal {
     body: string;
   };
 }
+
+/** The form a proposal takes, which determines whether it carries legal text. */
+export type Instrument =
+  | "bill"
+  | "draft-bill"
+  | "state-law"
+  | "executive-order"
+  | "resolution"
+  | "framework"
+  | "industry";
+
+/** What a proposal is about. A proposal can address several. */
+export type Theme =
+  | "frontier-safety"
+  | "economic"
+  | "child-safety"
+  | "infrastructure"
+  | "rights";
+
+/**
+ * A ladder of oversight over frontier models, from nothing, to developers
+ * describing their own risk, to someone else checking it, to someone able to
+ * stop a model.
+ */
+export type OversightLevel =
+  | "none"
+  | "disclosure"
+  | "verification"
+  | "intervention";
+
+/** Stance on federal preemption of state AI law. State measures are not-applicable unless they take a position. */
+export type PreemptionStance = "seeks" | "opposes" | "silent" | "not-applicable";
 
 /**
  * The AI industry is not one industry. Policy incidence is only legible once a
