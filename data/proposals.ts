@@ -467,6 +467,67 @@ export const proposals: Proposal[] = [
     },
   },
   {
+    slug: "cantwell",
+    name: "Sen. Maria Cantwell — Comprehensive Governance Framework for Safe and Secure Frontier AI",
+    shortName: "Cantwell",
+    sponsor: "Sen. Maria Cantwell (D-WA), Commerce Committee Ranking Member",
+    year: "2026",
+    color: "#ca8a04",
+    primaryFrame: "Enforced federal safety standards + audit gate",
+    summary:
+      "An October 2026 framework from the top Democrat on the Senate Commerce Committee, which holds jurisdiction over NIST and most federal AI legislation. Built on six principles, it calls for NIST, with other federal agencies, to set clear, measurable, risk-based safety standards for frontier systems that could cause catastrophic harm — AI-enabled cyberattacks, CBRN threats, loss of human control, and self-improving or autonomous agents escaping secure testing environments — and states that covered models should not be released until an independent audit confirms they meet those standards. Around that gate it builds continuous government and independent stress-testing, financial-statement-style audits of developers, investor-style plain-language risk disclosure, prompt incident reporting, whistleblower protection, and preserved civil and criminal liability for foreseeable harms. It pairs the safety regime with public-private partnerships (defensive AI, industry-contributed compute and tools for smaller entities, public-interest compute), social-harm protections (child safety, company-funded worker training, human oversight and recourse in consequential decisions), and a global pillar of allied standards, ISO/IEC leadership, a U.S.–China AI crisis channel, and export controls. It is a statement of principles rather than bill text.",
+    keyProvisions: [
+      "NIST, with other agencies, sets clear, measurable, risk-based federal safety standards for frontier systems that could cause catastrophic harm, with heightened oversight for dangerous or self-improving systems and specialized standards for open-source models",
+      "Covered models should not be released until an independent audit confirms they meet federal standards — audit firms examine developers the way outside auditors examine financial statements",
+      "Continuous government and independent stress-testing, including verifying that systems halt self-modification that bypasses safety controls, monitoring, or human oversight",
+      "Investor-style plain-language disclosure of material safety and security risks, prompt incident reporting (loss of control over agents, dangerous cyber capabilities, safeguard failures, unsafe recursive self-improvement), and whistleblower protection",
+      "Developers remain liable under civil and criminal law for foreseeable harms their design, deployment, modification, or failure to implement reasonable safeguards materially contributes to",
+      "Social-harm pillar: child safety over addictive design, AI companies help fund apprenticeships and worker training, and transparent, fair, human-overseen consequential decisions with a right to challenge — naming AI-assisted prior authorization such as CMS's WISeR model",
+      "Global pillar: allied standards alignment, ISO/IEC leadership, secure incident sharing among allies, a Soviet-era-style 'red phone' crisis channel with China, and export controls limiting access to countries that uphold U.S.-led safety standards",
+    ],
+    regulatoryPhilosophy:
+      "Licensing-adjacent prevention without a new licensing agency. Cantwell keeps NIST as the standard-setter and outsources verification to a private audit profession on the financial-reporting model, but makes the audit a precondition of release — which, if legislated, would be the hardest pre-deployment gate on this map short of Sanders's moratorium. The disclosure model is securities law rather than the SB 53 / RAISE transparency-report model: material risks in plain language, with liability left fully intact rather than traded for safe harbors. It is notably silent on preemption, the question the rest of the federal debate is organized around.",
+    strengths: [
+      "The only federal proposal on the map that makes an independent audit a precondition of release rather than a post-release disclosure — the OpenAI Blueprint's CAISI only recommends, and GAAIA has no evaluation gate at all",
+      "Preserves civil and criminal liability for foreseeable harms instead of trading it for compliance safe harbors, so the audit regime adds to accountability rather than replacing it",
+      "The financial-audit and investor-disclosure analogies import mature institutions — a regulated audit profession and a materiality standard — instead of inventing new ones",
+      "Takes open-source models seriously with dedicated standards rather than either exempting them or treating them as closed models",
+      "The global pillar is unusually concrete: allied incident-sharing, ISO/IEC standards leadership, and a U.S.–China crisis channel address cross-border failure modes that domestic proposals ignore",
+      "Comes from the Commerce Committee's ranking member, the committee through which most federal AI legislation must pass",
+    ],
+    weaknesses: [
+      "A framework of 'shoulds', not bill text — 'covered models' is never defined, so the threshold that determines who faces the release gate is left blank",
+      "Silent on preemption, the axis on which every other federal proposal is negotiated, which leaves unclear whether these standards are a floor for state law or a replacement for it",
+      "Relies on a private audit industry that does not yet exist at the needed scale and that will be paid by the companies it audits — the same independence problem financial auditing has never fully solved",
+      "Worker provisions are thin: companies 'help fund' training and are 'incentivized' to improve rather than eliminate jobs, with no revenue mechanism, no safety net expansion, and no displacement measure",
+      "Says nothing about data centers, energy, or water — the infrastructure fight that has become the most locally salient AI issue",
+      "The public-private partnership pillar asks leading AI companies to contribute compute and tools voluntarily, a soft obligation sitting beside hard ones",
+    ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "secondary",
+        hyperscalers: "none",
+        chips: "secondary",
+      },
+      base:
+        "Undefined 'covered models' capable of catastrophic harm; deployers in consequential decisions; export controls",
+      note:
+        "Standards, the pre-release audit, disclosure, incident reporting, and liability all assess the frontier developer, though the absence of a covered-model threshold means the size of that base is not yet knowable. The consequential-decisions provisions — transparency, human oversight, and recourse in employment, health care, and credit — reach whoever deploys the system, which is the app layer and enterprise adopters, and name a federal program (CMS's WISeR prior-authorization model) as a deployer. Export controls conditioned on recipients upholding U.S. safety standards reach the chip layer, as in the OpenAI Blueprint. Nothing touches the hyperscalers.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 50, y: 85 },
+      "prevention-authority": { x: 88, y: 93 },
+      "innovation-worker": { x: 50, y: 55 },
+      "preemption-obligations": { x: 88, y: 35 },
+    },
+    contrast: {
+      slug: "openai-blueprint",
+      title: "Cantwell vs. the OpenAI Blueprint",
+      body: "Both frameworks target the same catastrophic risks — cyber, CBRN, loss of control, and recursive self-improvement — and both endorse independent audits, incident reporting, whistleblower protection, and export controls. They split on the one question that decides whether oversight has teeth: who can stop a release. The Blueprint gives CAISI a mandatory pre-release evaluation that can only recommend, and lets developers ship if CAISI misses a deadline. Cantwell holds that covered models should not be released until an independent audit confirms they meet NIST standards. They split again on the price: the Blueprint makes preemption of state frontier-safety law the payoff for accepting federal rules, while Cantwell's framework never mentions preemption at all.",
+    },
+  },
+  {
     slug: "bores-dividend",
     name: "Alex Bores — The AI Dividend",
     shortName: "Bores AI Dividend",
@@ -528,12 +589,14 @@ export const proposals: Proposal[] = [
     color: "#059669",
     primaryFrame: "Economic redistribution",
     summary:
-      "The most developed Democratic proposal for AI governance, focusing on worker protection and economic redistribution alongside safety and competitiveness. Kelly treats AI primarily as an economic disruption problem requiring institutional investment, proposing an industry-funded AI Horizon Fund for worker retraining and infrastructure.",
+      "A September 2025 roadmap organized around a single funding question most AI roadmaps skip: who pays? Kelly's answer is the AI Horizon Fund, a federal trust fund financed by revenue from the largest frontier AI companies and spent through mandatory spending outside the annual appropriations process. Candidate bases are floated rather than chosen — large-scale use of public resources such as power, water, and land, profits from AI-powered digital ad tools, or AI revenue windfalls. The Fund pays for worker upskilling through union apprenticeships and community colleges, an AI economic adjustment program with more generous unemployment insurance, and energy and water infrastructure. A full chapter on data centers holds that they must pay for the grid assets they require rather than leaving stranded costs to ratepayers, and calls for disclosure standards on energy, water, and emissions. A shorter trust chapter says models must be rigorously tested before release, including red-teaming by trusted entities such as government agencies and national labs supported by the Fund.",
     keyProvisions: [
-      "AI Horizon Fund financed by leading AI companies for worker reinvestment and infrastructure",
+      "AI Horizon Fund: a federal trust fund with mandatory spending, financed by the largest frontier AI companies, with candidate bases including use of power, water, and land, AI-powered ad profits, or AI revenue windfalls",
       "Advance notice requirements for AI-driven workforce changes",
       "Strengthened safety nets including enhanced unemployment aid",
       "BLS data collection expansion on retraining outcomes and deployment patterns",
+      "Data center principles: fair cost sharing with no stranded costs for ratepayers, new financing mechanisms for utilities, data centers as grid assets, smart permitting, and standards for disclosing energy, water, and emissions",
+      "Pre-release testing and evaluation of new models, including red-teaming by trusted entities such as government agencies and national labs supported by the Fund",
       "Advanced AI Security Readiness Act for security standards (bipartisan with Sen. Young)",
       "Guidance on AI use in NDAA for Pentagon-AI company relationships",
     ],
@@ -547,8 +610,8 @@ export const proposals: Proposal[] = [
       "Industry-funded rather than taxpayer-funded transition mechanisms place costs on the companies profiting from disruption",
     ],
     weaknesses: [
-      "The Horizon Fund is a slush fund with no teeth — voluntary industry 'contributions' to worker retraining is the same failed corporate social responsibility model that has never delivered meaningful results",
-      "Completely ignores AI safety, pre-deployment testing, and catastrophic risk — as if the only problem with AI is that it costs jobs",
+      "The Horizon Fund's financing is a list of possibilities rather than a mechanism — use of power, water, and land, AI-powered ad profits, or AI windfalls are offered as 'a starting point for conversation', so the roadmap commits to a payer without committing to a tax",
+      "Safety gets two pages: pre-release testing and red-teaming are endorsed without saying who requires them, what happens if a model fails, or which models are covered, and catastrophic risk is not addressed — child safety, election misuse, and liability are posed as open questions rather than answered",
       "No enforcement mechanism for workforce change notifications — companies can simply ignore advance notice requirements the way they routinely ignore existing labor protections",
       "Frames AI disruption as a manageable adjustment problem when the scale of displacement could be civilizational, offering band-aids for bullet wounds",
       "The bipartisan framing is a way to avoid taking hard positions on preemption, liability, or any issue where industry might push back",
@@ -561,13 +624,26 @@ export const proposals: Proposal[] = [
         chips: "unspecified",
       },
       base:
-        "Undefined — the Horizon Fund names a payer but not a base",
+        "Unchosen — the Horizon Fund names a payer and three candidate bases, but picks none",
       note:
-        "The Horizon Fund is described as financed by leading AI companies, which names a payer without naming a base. Assessed on revenue, it lands on the frontier. Assessed on compute consumed, it lands on the app layer and passes to the hyperscalers. Assessed on headcount displaced, it lands on enterprise adopters and reaches no AI company at all. The base is the whole policy, and it is currently blank — which makes this the proposal most worth pressing a sponsor on.",
+        "The Horizon Fund is aimed at 'the biggest frontier companies,' but the roadmap offers three candidate bases and picks none, and each lands on a different layer. A levy on large-scale use of power, water, and land assesses whoever owns the data centers, which is the hyperscalers. A levy on profits from AI-powered ad tools reaches the consumer platforms — the app layer's oldest business — and passes over the labs. A windfall levy on AI revenue is the only one that lands squarely on the frontier. The choice of base is the whole policy, and it is still open — which makes this the proposal most worth pressing a sponsor on.",
+    },
+    dataCenter: {
+      posture: "conditional",
+      addresses: [
+        "siting",
+        "electricity",
+        "water",
+        "jobs",
+      ],
+      decisionMaker:
+        "Utilities and permitting authorities, under consistent local, state, and federal standards",
+      summary:
+        "Accepts the buildout and sets terms: data centers fund the grid assets they require rather than leaving stranded costs to families and small businesses, act as grid assets with their own storage and backup generation, adopt water-efficient cooling in drought-prone regions, and disclose energy, water, and emissions under common standards. Permitting should be faster but consistent across levels of government, and the Horizon Fund trains the workforce that builds the energy infrastructure.",
     },
     chartPositions: {
-      "enforcement-scope": { x: 65, y: 25 },
-      "prevention-authority": { x: 65, y: 25 },
+      "enforcement-scope": { x: 65, y: 40 },
+      "prevention-authority": { x: 65, y: 45 },
       "innovation-worker": { x: 80, y: 75 },
       "preemption-obligations": { x: 55, y: 30 },
     },
@@ -853,6 +929,79 @@ export const proposals: Proposal[] = [
       "prevention-authority": { x: 85, y: 8 },
       "innovation-worker": { x: 95, y: 12 },
       "preemption-obligations": { x: 88, y: 10 },
+    },
+  },
+  {
+    slug: "gallego",
+    name: "Sen. Ruben Gallego — Middle Class Jobs Plan",
+    shortName: "Gallego",
+    sponsor: "Sen. Ruben Gallego (D-AZ)",
+    year: "2026",
+    color: "#e11d48",
+    primaryFrame: "Worker power + middle-class industrial policy",
+    summary:
+      "An October 2026 economic platform, written through Arizona's history of offshoring and the Great Recession, organized around five pillars: raise wages and benefits, create blue-collar jobs, restore worker trust in government in the age of AI, expand entrepreneurship outside superstar cities, and help workers find jobs faster. AI is one pillar of a broader labor agenda rather than the organizing subject, but the AI chapter opens with an unusually blunt premise for a Democratic senator — 'we must slow AI development and regulate it' — before framing the real question as whether workers or elites are in the driver's seat. Its AI agenda is labor-side: a New Deal-style public service jobs program for displaced workers funded by some combination of a data center tax, a token tax, or an excise tax on large AI company revenue; a corporate robot tax; sectoral bargaining over workplace technology; conditions — up to hard caps and bans on complete automation — on industries deploying highly displacing technology; mandatory human review of AI hiring, firing, and discipline; and a modernized unemployment insurance system partly funded by AI taxes. Its data center provisions are among the most aggressive on the map: a 10% excise tax on data center gross receipts, repeal of bonus depreciation and SALT deductions for data centers, full cost recovery for grid upgrades, a requirement to bring new generation, and a ban on key Chinese chips and components.",
+    keyProvisions: [
+      "New Deal-style public service jobs program for AI-displaced workers in care, coaching, addiction counseling, and community work, funded by a data center tax, a token tax, and/or an excise tax on large AI company revenue",
+      "10% excise tax on data center gross receipts, repeal of data center bonus depreciation and SALT deductions, full cost recovery for generation, transmission, and distribution upgrades, and a requirement to bring additional energy to the grid that survives project abandonment",
+      "Corporate 'robot' tax that preserves payroll contributions for automated-away jobs, with revenue supporting displaced workers",
+      "Mandatory bargaining between employers and elected worker representatives — ideally by sector — over workplace technology and data privacy",
+      "Safety and workforce conditions on industries deploying highly displacing technology, including prohibitions on complete automation, human-operator requirements, no-net-job-and-wage-loss rules, and hard caps on deployment",
+      "Ban on relying exclusively on AI or algorithmic management for hiring, discharge, or discipline, with meaningful human review required; minimum limits on worker data collection and a ban on surveillance wage setting",
+      "Unemployment insurance floor of six months at 75% wage replacement, extended to part-time, self-employed, and new entrants, partly funded by taxing data centers, AI tokens, or AI company revenue",
+      "Right to a U.S.-based human customer-service agent on request, AI disclosure on job postings, a 120-day WARN Act notice period, and a right for individuals to set a price companies must pay to use their personal data",
+    ],
+    regulatoryPhilosophy:
+      "Bargain over the machines rather than regulate the models. Gallego treats AI as the next round of the offshoring and automation that hollowed out Arizona's blue-collar economy, and answers it with labor-law tools: sectoral bargaining over technology adoption, human-review mandates, deployment conditions written into industry permission, and taxes that make automation pay what labor pays. The rhetorical commitment to 'slow AI development' is real, but the instruments act on deployment and on the infrastructure buildout rather than on model development — there is no testing, licensing, or frontier-safety provision anywhere in the plan. Data centers are treated as a revenue base and a ratepayer threat, not a land-use question.",
+    strengths: [
+      "Puts workers inside the adoption decision through sectoral technology bargaining, rather than compensating them after the fact — a lever almost no other proposal on the map reaches",
+      "The deployment-conditions provision is the only one in the landscape that contemplates hard caps on automation in specific industries, giving policymakers a tool between laissez-faire and a moratorium",
+      "Names a precise tax base where others leave it blank — a 10% excise on data center gross receipts — and pairs it with the full set of cost-recovery rules that keep grid costs off ratepayers",
+      "Human review of AI-driven hiring, discharge, and discipline, plus limits on worker data and surveillance wage setting, addresses the AI harms workers are already experiencing rather than speculative ones",
+      "Treats the AI bet as a financial risk as well as a displacement risk — asking what happens to workers if the productivity gains never arrive — which almost no proposal on the map considers",
+    ],
+    weaknesses: [
+      "Despite opening with 'we must slow AI development and regulate it,' the plan contains no instrument that does either — no testing, licensing, safety standards, or liability provisions for the models themselves",
+      "The funding mechanism for its flagship jobs program is a menu ('data center tax, token tax, and/or excise tax'), and the same menu is spent a second time on unemployment insurance, so the revenue is committed twice without being raised once",
+      "A 10% gross-receipts excise on data centers stacked with repeal of depreciation and SALT deductions is designed to deter the buildout, which sits awkwardly with the plan's own enthusiasm for Arizona's chip and AI manufacturing boom",
+      "Deployment conditions as strong as hard caps and bans on complete automation are proposed without saying who decides which industries qualify, through what process, or on what evidence",
+      "It is a campaign-style platform, not legislation — most AI items begin with 'explore,' 'consider,' or 'promote,' and none is drafted",
+      "Silent on child safety, copyright, deepfakes, preemption, and catastrophic risk",
+    ],
+    layers: {
+      incidence: {
+        frontier: "secondary",
+        apps: "primary",
+        hyperscalers: "primary",
+        chips: "indirect",
+      },
+      base:
+        "Data center gross receipts; employers that automate; a menu of token and AI-revenue taxes",
+      note:
+        "The only firm base in the plan is data center gross receipts, and with depreciation and SALT repeal stacked on top, the hyperscalers carry the heaviest and most specific burden on this map short of a moratorium. The labor instruments — the robot tax, technology bargaining, human-review mandates, and deployment caps — assess the employer doing the automating, which is the app layer and enterprise adopters, not the labs. The frontier layer appears only through the floated token tax and revenue excise, which are options rather than commitments. The ban on Chinese chips and components in data centers shifts demand toward domestic suppliers, so the chip layer is touched as a beneficiary rather than a payer.",
+    },
+    dataCenter: {
+      posture: "conditional",
+      addresses: [
+        "electricity",
+        "tax",
+        "jobs",
+      ],
+      decisionMaker:
+        "The federal tax code and grid cost-allocation rules",
+      summary:
+        "Accepts that data centers will be built and makes them pay for it on every axis at once: a 10% excise on gross receipts, repeal of bonus depreciation and SALT deductions, full cost recovery for grid upgrades, a requirement to bring new generation that survives abandonment, a ban on Chinese chips and components, and pressure for Project Labor and Community Benefits Agreements. Siting, water, and local authority go unaddressed.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 90, y: 75 },
+      "prevention-authority": { x: 78, y: 50 },
+      "innovation-worker": { x: 92, y: 20 },
+      "preemption-obligations": { x: 82, y: 10 },
+    },
+    contrast: {
+      slug: "casar-ai-tax",
+      title: "Gallego vs. Casar: the same jobs program, two theories of the tax",
+      body: "Both route AI revenue into federally funded public service jobs doing care and community work that automation cannot easily reach. Casar has already written the tax: an excise on foundation-model developers, measured in tokens or revenue and indexed to unemployment. Gallego leaves the jobs program's funding as a menu, and his one fully specified AI tax lands somewhere else entirely — a 10% excise on data center gross receipts, which assesses the hyperscalers that own the buildings rather than the labs that train the models. Gallego also reaches the adoption decision itself, through sectoral technology bargaining and deployment caps, which Casar's purely fiscal bill never touches.",
     },
   },
   {
