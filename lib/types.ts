@@ -1,6 +1,7 @@
 export type ProposalSlug =
   | "wh-framework"
   | "wh-ai-eo"
+  | "wh-si-accord"
   | "blackburn"
   | "openai-lehane"
   | "openai-industrial"

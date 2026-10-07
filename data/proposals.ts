@@ -118,6 +118,68 @@ export const proposals: Proposal[] = [
     },
   },
   {
+    slug: "wh-si-accord",
+    name: "Executive Order 14434 & the White House Accord on Super Intelligence",
+    shortName: "WH SI Accord",
+    sponsor:
+      "President Trump, with the heads of Google, Anthropic, Meta, OpenAI, xAI, and Nvidia",
+    year: "2026",
+    color: "#78716c",
+    primaryFrame: "Industry self-governance + rebranding",
+    summary:
+      "Two instruments released together on September 29, 2026. Executive Order 14434, 'Inaugurating the Era of Super Intelligence,' directs the executive branch to use 'Super Intelligence' and 'SI' in place of 'Artificial Intelligence' and 'AI' in official documents and communications and to 'not acknowledge' the old terms, while keeping the existing statutory definition of AI for now; its one forward-looking clause directs the President's science adviser to propose, within 60 days, legislative language for a federal definition of Super Intelligence, including whether it should supersede the statutory definition of artificial intelligence. Alongside it, Trump and the leaders of six companies — Sundar Pichai (Google), Dario Amodei (Anthropic), Mark Zuckerberg (Meta), Greg Brockman (OpenAI), Elon Musk (xAI), and Jensen Huang (Nvidia) — signed the White House Accord on Super Intelligence, a voluntary pact committing each participant to four layers of controls and audits: internal controls monitoring model capabilities and alignment during training and deployment (cyber, biological, and chemical threats, and models accessing systems in unintended ways), an internal team that runs and remediates those controls, independent external auditors or evaluators, and an independent committee of the board that receives both sets of reports. Signatories also agree to meet regularly to develop standards and best practices. Leaders of Microsoft, Amazon, AMD, and Palantir attended but did not sign. The accord carries no penalties, no public disclosure of audit results, and no government role; Trump called it 'morally binding,' and its closing line allows that 'over time, it may make sense to codify these steps into laws or regulations.'",
+    keyProvisions: [
+      "EO 14434: the executive branch uses 'Super Intelligence' and 'SI' in place of 'Artificial Intelligence' and 'AI' in correspondence, websites, reports, and policy documents, and will 'not acknowledge' the old terms",
+      "EO 14434: the definition stays tied to the existing statutory definition of AI (15 U.S.C. § 9401(3)) until Congress or a later Presidential action replaces it",
+      "EO 14434: the APST has 60 days to propose legislative language for a federal definition of Super Intelligence, assess whether it should supersede the statutory AI definition, and recommend conforming amendments",
+      "Accord layer 1: internal controls monitoring model capabilities and alignment during training and deployment, covering cybersecurity, biosecurity, chemical threats, and models hacking or accessing systems in unintended ways",
+      "Accord layers 2 and 3: an internal team that operates the controls and remediates issues, and independent external auditors or evaluators that verify the controls work",
+      "Accord layer 4: an independent committee of each company's board that receives internal and external reports and ensures identified issues are corrected",
+      "Signatories meet regularly to develop shared safety standards and best practices; no penalties, no required disclosure of audit results, and no government oversight role",
+    ],
+    regulatoryPhilosophy:
+      "Self-governance under presidential sponsorship. The accord adopts the vocabulary of the mandatory proposals — external audits, independent oversight, capability monitoring — but places every element inside the company: the controls are internal, the auditors are chosen by the audited, the oversight body is the company's own board, and the standards are written by the signatories collectively. The government's role is to convene and to lend the White House's name. The executive order is the administration's framing move: it recasts AI from a risk to be governed into a destiny to be inaugurated, and its definitional clause lays groundwork for a statutory redefinition whose regulatory consequences are not yet visible.",
+    strengths: [
+      "Brings five leading frontier developers and Nvidia under a single written set of commitments that goes further than earlier voluntary pledges by naming an organizational structure, not just practices",
+      "The four-layer structure is a recognizable corporate-governance design: separating the controls, the people who run them, outside verification, and board-level oversight is how financial and security risk is managed in mature industries",
+      "Names specific risk domains — cyber, biological, chemical, and models accessing systems in unintended ways — and applies monitoring during training, not only at release",
+      "Board-level accountability creates a fiduciary channel: directors who receive audit findings and fail to act on them face a different legal exposure than management that never escalated them",
+      "The codification clause signals that the signatories accept these steps as a possible statutory floor, which gives legislators an industry-endorsed starting point",
+    ],
+    weaknesses: [
+      "Entirely voluntary — 'morally binding' in the President's words — with no penalties, no enforcement, and nothing that happens to a signatory that walks away",
+      "The audited companies choose their own auditors, and no audit result has to be disclosed to the public or the government, so outsiders cannot verify that any layer is functioning",
+      "The standards are to be written by the signatories themselves meeting together, which places frontier-safety rulemaking with six competitors in a room — a structure with obvious antitrust and capture problems",
+      "Nothing in the accord can delay or stop a release; it governs how risk is monitored and reported internally, not what happens when the monitoring finds something",
+      "Major developers and deployers stayed out — leaders of Microsoft, Amazon, AMD, and Palantir attended the signing lunch but did not sign, and Apple was absent — so the accord covers a self-selected subset of the industry",
+      "The executive order changes words, not obligations, and an executive branch that will 'not acknowledge' the term AI complicates the plain reading of statutes, contracts, and regulations that still use it",
+      "Silent on workers, children, consumers, copyright, data centers, and preemption",
+    ],
+    layers: {
+      incidence: {
+        frontier: "indirect",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "None — voluntary commitments by six signatories",
+      note:
+        "The accord's commitments describe how a company that trains frontier models should monitor and oversee them, so whatever cost it carries falls on the frontier layer, and only on the members who chose to sign. Google and Meta sign as model developers, not as cloud or platform operators. Nvidia's signature is the outlier: the four layers are written for model training and deployment, and a chip company joins them as an endorser rather than as a party that would change its business. Like the earlier executive order, it assesses nothing on anyone who did not agree to it.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 15, y: 8 },
+      "prevention-authority": { x: 62, y: 55 },
+      "innovation-worker": { x: 8, y: 92 },
+      "preemption-obligations": { x: 15, y: 35 },
+    },
+    contrast: {
+      slug: "cantwell",
+      title: "The Accord vs. Cantwell: the same audit, a different owner",
+      body: "Published a week apart, both frameworks are built on independent audits of frontier developers, and both borrow from corporate finance — Cantwell's financial-statement audits, the accord's board audit committee. The difference is who holds each piece. Under Cantwell, NIST writes the standards, the audit confirms compliance before a covered model can be released, risks are disclosed publicly, and liability stays intact. Under the accord, the signatories write the standards together, each company picks its auditor, findings go to its own board, nothing is disclosed, and nothing stops a release.",
+    },
+  },
+  {
     slug: "blackburn",
     name: "Blackburn TRUMP AMERICA AI Act",
     shortName: "Blackburn",

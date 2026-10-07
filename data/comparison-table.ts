@@ -6,6 +6,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Innovation + competitiveness",
       "wh-ai-eo": "Deregulation + national-security cyber",
+      "wh-si-accord": "Industry self-governance + rebranding",
       blackburn: "Comprehensive federal regulation",
       "openai-lehane": "Prevention-first safety",
       "openai-industrial": "Industrial policy + shared prosperity",
@@ -30,6 +31,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "No",
       "wh-ai-eo": "No (cyber clearinghouse, not a regulator)",
+      "wh-si-accord": "No",
       blackburn: "No (uses FTC, NIST)",
       "openai-lehane": "CAISI expansion",
       "openai-industrial": "CAISI + Public Wealth Fund",
@@ -54,6 +56,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Minimal",
       "wh-ai-eo": "Minimal (voluntary for developers)",
+      "wh-si-accord": "No (voluntary; 'morally binding')",
       blackburn: "Extensive",
       "openai-lehane": "Yes (federal testing)",
       "openai-industrial": "Extensive (auditing + safety nets + tax reform)",
@@ -78,6 +81,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Existing law",
       "wh-ai-eo": "Existing criminal statutes + agency directives",
+      "wh-si-accord": "None — self-policing through company-chosen auditors and board committees",
       blackburn: "FTC + state AG + private action",
       "openai-lehane": "Federal testing authority",
       "openai-industrial": "Auditing + adaptive triggers + tax",
@@ -102,6 +106,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Strong",
       "wh-ai-eo": "Not addressed",
+      "wh-si-accord": "Not addressed",
       blackburn: "Strong",
       "openai-lehane": "Conditional",
       "openai-industrial": "Not addressed directly",
@@ -126,6 +131,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Workforce training",
       "wh-ai-eo": "None (cyber hiring only)",
+      "wh-si-accord": "None",
       blackburn: "Job effects reporting",
       "openai-lehane": "None specific",
       "openai-industrial": "Public Wealth Fund + 32hr week + portable benefits + adaptive safety nets",
@@ -150,6 +156,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Yes",
       "wh-ai-eo": "Not addressed",
+      "wh-si-accord": "Not addressed",
       blackburn: "Yes (extensive)",
       "openai-lehane": "Referenced",
       "openai-industrial": "Youth safety referenced",
@@ -174,6 +181,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "Courts decide; licensing OK",
       "wh-ai-eo": "Not addressed (adversary IP-theft framing only)",
+      "wh-si-accord": "Not addressed",
       blackburn: "Extensive provisions",
       "openai-lehane": "Not detailed",
       "openai-industrial": "Not addressed",
@@ -198,6 +206,7 @@ export const comparisonRows: ComparisonRow[] = [
     values: {
       "wh-framework": "No",
       "wh-ai-eo": "Voluntary (30-day cyber access, no gate)",
+      "wh-si-accord": "Voluntary capability monitoring during training and deployment; nothing gates release",
       blackburn: "Evaluation program",
       "openai-lehane": "Yes (classified)",
       "openai-industrial": "Pre- and post-deployment auditing (CBRN-scoped)",
