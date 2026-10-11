@@ -54,6 +54,7 @@ const ladderLevels: OversightLevel[] = [
   "intervention",
   "verification",
   "disclosure",
+  "liability",
 ];
 
 // Findings are generated from the data so they stay true as entries are added.
@@ -242,7 +243,7 @@ export default function TrendsPage() {
       <div className="mt-14">
         <SectionHeading
           title="The oversight ladder"
-          subtitle="The strongest oversight each frontier-safety proposal contemplates, from developers describing their own risk to someone able to stop a model"
+          subtitle="The strongest oversight each frontier-safety proposal contemplates, from developers answering for harm after the fact to someone able to stop a model"
         />
         <DateStrip
           rows={ladderLevels.map((level) => ({
@@ -258,7 +259,7 @@ export default function TrendsPage() {
           ariaLabel="Frontier-safety proposals by date and oversight level"
         />
         <Legend />
-        <dl className="mt-6 grid gap-4 text-sm sm:grid-cols-3">
+        <dl className="mt-6 grid gap-4 text-sm sm:grid-cols-2 lg:grid-cols-4">
           {ladderLevels.map((level) => (
             <div key={level}>
               <dt className="font-semibold text-stone-900">

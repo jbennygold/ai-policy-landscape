@@ -13,7 +13,11 @@ export const instrumentMeta: Record<
   bill: { label: "Introduced bill", hasText: true, order: 0 },
   "draft-bill": { label: "Draft bill", hasText: true, order: 1 },
   "state-law": { label: "State law", hasText: true, order: 2 },
-  "executive-order": { label: "Executive order", hasText: true, order: 3 },
+  "executive-order": {
+    label: "Executive order or directive",
+    hasText: true,
+    order: 3,
+  },
   resolution: { label: "Resolution", hasText: false, order: 4 },
   framework: { label: "Framework or platform", hasText: false, order: 5 },
   industry: { label: "Industry document", hasText: false, order: 6 },
@@ -35,18 +39,24 @@ export const oversightMeta: Record<
     label: "Intervention",
     description:
       "Someone other than the developer can stop, suspend, or block a frontier model — an emergency order, a court injunction, a kill switch, or a release gate.",
-    rank: 3,
+    rank: 4,
   },
   verification: {
     label: "Verification",
     description:
       "Someone other than the developer checks its claims or tests its models — government evaluation, licensed verifiers, or independent auditors.",
-    rank: 2,
+    rank: 3,
   },
   disclosure: {
     label: "Disclosure",
     description:
       "Developers describe their own risk management and report incidents, and no one checks.",
+    rank: 2,
+  },
+  liability: {
+    label: "Liability only",
+    description:
+      "No one checks or stops a model in advance; developers or operators answer in court for harm their systems cause.",
     rank: 1,
   },
   none: {

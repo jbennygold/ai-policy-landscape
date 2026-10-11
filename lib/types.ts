@@ -21,9 +21,14 @@ export type ProposalSlug =
   | "ca-newsom-eo"
   | "il-sb315"
   | "ny-raise"
+  | "pa-shapiro-eo"
+  | "tx-abbott-audit"
   | "gaaia"
   | "frontier-act"
-  | "lieu-kill-switch";
+  | "lieu-kill-switch"
+  | "hawley-murphy"
+  | "trahan-claim"
+  | "jayapal-charter";
 
 export interface Proposal {
   slug: ProposalSlug;
@@ -90,11 +95,12 @@ export type Theme =
 
 /**
  * A ladder of oversight over frontier models, from nothing, to developers
- * describing their own risk, to someone else checking it, to someone able to
- * stop a model.
+ * answering for harm after the fact, to developers describing their own risk,
+ * to someone else checking it, to someone able to stop a model.
  */
 export type OversightLevel =
   | "none"
+  | "liability"
   | "disclosure"
   | "verification"
   | "intervention";
