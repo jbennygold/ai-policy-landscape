@@ -9,6 +9,7 @@ export type ProposalSlug =
   | "anthropic-draft"
   | "cht-roadmap"
   | "warner"
+  | "warner-s5576"
   | "cantwell"
   | "thune-klobuchar"
   | "bores-dividend"
