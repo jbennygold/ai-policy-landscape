@@ -5,6 +5,7 @@ import { charts } from "@/data/charts";
 import { Chart2x2 } from "@/components/chart-2x2";
 import { ProposalBadge } from "@/components/proposal-badge";
 import { LayerIncidence } from "@/components/layer-incidence";
+import { frontierFamily } from "@/data/families";
 
 export function generateStaticParams() {
   return proposals.map((p) => ({ slug: p.slug }));
@@ -22,6 +23,12 @@ export default async function ProposalPage({
   const contrastTarget = proposal.contrast
     ? proposals.find((p) => p.slug === proposal.contrast!.slug)
     : null;
+
+  const familyRole = frontierFamily.members.some((m) => m.slug === proposal.slug)
+    ? "is one of"
+    : frontierFamily.related.some((r) => r.slug === proposal.slug)
+      ? "is related to"
+      : null;
 
   return (
     <div className="mx-auto max-w-3xl px-6 py-12">
@@ -71,6 +78,19 @@ export default async function ProposalPage({
       <p className="mt-4 text-base leading-relaxed text-stone-700">
         {proposal.regulatoryPhilosophy}
       </p>
+
+      {familyRole && (
+        <p className="mt-8 rounded-lg border border-stone-200 bg-white px-4 py-3 text-sm text-stone-700">
+          This proposal {familyRole}{" "}the frontier framework family built on
+          California&apos;s SB 53.{" "}
+          <Link
+            href="/families/frontier"
+            className="font-medium text-[#1a56db] hover:underline"
+          >
+            Compare the family side by side &rarr;
+          </Link>
+        </p>
+      )}
 
       <LayerIncidence proposal={proposal} />
 

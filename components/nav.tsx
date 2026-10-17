@@ -5,6 +5,7 @@ const links = [
   { href: "/proposals", label: "Proposals" },
   { href: "/explorer", label: "Explorer" },
   { href: "/trends", label: "Trends" },
+  { href: "/families/frontier", label: "Frontier Bills" },
   { href: "/datacenters", label: "Data Centers" },
   { href: "/gaps", label: "What's Missing" },
 ];
