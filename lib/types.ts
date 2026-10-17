@@ -6,6 +6,7 @@ export type ProposalSlug =
   | "openai-lehane"
   | "openai-industrial"
   | "openai-blueprint"
+  | "anthropic-draft"
   | "cht-roadmap"
   | "warner"
   | "cantwell"
