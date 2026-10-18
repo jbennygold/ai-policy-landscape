@@ -160,7 +160,7 @@ export const frontierFamily: Family = {
         checks:
           "A registered independent evaluator every 180 days, with published reports; findings are advisory",
         incidents: "15 days; 24 hours if imminent",
-        stop: "The D.C. District Court, on application by the head of Commerce, for 45 days at a time, if Commerce proves imminent risk through one of four named pathways and that nothing less restrictive would work",
+        stop: "The D.C. District Court, on application by the head of Commerce, for 45 days at a time, if Commerce proves imminent risk through one of four named pathways and that nothing less restrictive would work, with the court weighing the harm an order would cause",
         preemption:
           "Disclosure, third-party evaluation, and incident reporting, for every AI developer; void if the federal requirements fall",
       },
@@ -187,7 +187,7 @@ export const frontierFamily: Family = {
   observations: [
     "The skeleton has held. Every member requires a framework, release reports, and incident reporting, and the disagreements are about what sits on top of it.",
     "Verification moved from absent to standard. The 2025 state laws relied on developers' own descriptions; every member from mid-2026 has someone outside the developer reviewing its claims, though the reviewers range from the developer's own testers reporting to Commerce to licensed verifiers with a substantive adequacy standard.",
-    "The emergency brake arrived in mid-2026 and is placed differently in each version: with a cabinet secretary in the FRONTIER Act, and with a federal judge in the Senate draft and Anthropic's text. Anthropic's version puts the burden of proof on the government and requires the least restrictive measure.",
+    "The emergency brake arrived in mid-2026 and is placed differently in each version: with a cabinet secretary in the FRONTIER Act, and with a federal judge in the Senate draft and Anthropic's text. Anthropic's version puts the burden of proof on the government, requires the least restrictive measure, and directs the court to weigh the harm an order would cause but not the harm of declining to act.",
     "Coverage does not track strictness. The industry-drafted Anthropic bill reaches further down (10^25 operations, a single revenue-or-spending test) than the FRONTIER Act (10^26, revenue-and-spending tiers), while giving its evaluators less authority.",
     "Federal preemption is aimed at the states where the design began. Each federal member displaces state transparency, auditing, and incident-reporting rules — the subjects of SB 53, RAISE, and SB 315 — while preserving child safety, deployment rules, and general state law. They differ on duration (three-year sunset in GAAIA, permanent in FRONTIER) and on reach (Anthropic's covers every AI developer, not just covered ones).",
   ],
