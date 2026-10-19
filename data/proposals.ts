@@ -434,6 +434,74 @@ export const proposals: Proposal[] = [
     },
   },
   {
+    slug: "anthropic-aaif",
+    name: "Anthropic — Advanced AI Framework (Policy on the AI Exponential)",
+    shortName: "Anthropic Framework",
+    sponsor: "Anthropic",
+    year: "2026",
+    introduced: "2026-06-10",
+    instrument: "industry",
+    themes: ["frontier-safety"],
+    oversight: "intervention",
+    preemption: "seeks",
+    color: "#9a3412",
+    primaryFrame: "Tested, evaluated, and published risk + agency power to bar deployment",
+    summary:
+      "Published June 10, 2026 alongside an Economic Policy Framework under the banner 'Policy on the AI Exponential,' the Advanced AI Framework is Anthropic's statement of what governments should do about the most serious risks from frontier AI. It is the source document for the company's later draft bill, which its federal affairs lead described in October as a translation of the framework into legislative language. Part 1 sets obligations for developers that both train models above 10^25 operations and earn more than $500M in AI revenue or spend more than $1B a year on AI R&D. They must test for four enumerated risks (biological weapons, offensive cyber operations, loss of control, and automated AI R&D that amplifies the others), publish a safety framework, certify compliance annually, publish risk reports every six months that cover substantially riskier internal models, publish system cards for materially more capable or less safeguarded releases, report critical safety incidents within 15 days, maintain a security program with penetration testing, and engage at least one qualified independent evaluator who sees unredacted reports and the most capable models and publishes a review. The framework floats evaluator licensing, government or pooled funding so evaluators are not paid by the labs they assess, ratings, and random assignment of highly rated evaluators to prevent 'evaluator shopping.' For enforcement it offers a menu rather than a design: an agency could find violations, from missing reports or an unqualified or under-resourced evaluator to a significant risk of catastrophic harm that persists after safeguards, and respond with fines, a bar on deploying further covered models until the violation is corrected, or, in extreme cases, restrictions on deployed models. It pairs that with optional safeguards: court enforcement with provisional remedies, discretion confined to listed violations, and expedited judicial review. On preemption it says Congress should not preempt state law unless it enacts a rigorous federal regime that 'meets or exceeds the strongest measures proposed in this framework,' and then only for the specific functions Congress occupies, with no safe harbor and ambiguity resolved for the states. Part 2 is a societal-resilience agenda for biological and cyber threats: gene synthesis screening, pathogen-agnostic biosurveillance, stockpiles and countermeasures, open-source and legacy software security, coordinated vulnerability remediation at scale, and binding patch-deployment schedules for critical-infrastructure operators.",
+    keyProvisions: [
+      "Coverage: developers meeting both a compute test (above 10^25 training operations) and a money test (above $500M in annual AI revenue or $1B a year in AI R&D), with a capability threshold suggested for later; criteria reviewed at least annually",
+      "Catastrophic risk defined in line with California's SB 53; obligations focused on biological weapons, offensive cyber operations, loss of control, and automated AI R&D that could amplify them",
+      "Published safety framework naming an accountable officer, annual compliance certification, risk reports every six months (more often if progress accelerates) covering substantially riskier internal deployments, and system cards for materially more capable or less safeguarded releases",
+      "Critical safety incidents reported to the agency within 15 days, shared with federal agencies and national laboratories, exempt from public records laws",
+      "Independent evaluation within six months of enactment: an evaluator with no financial interest in the developer, unredacted reports, access to the most capable models, and the right to publish its review and concerns",
+      "Evaluator ecosystem: published standards, a licensing system to be explored, government or pooled funding for financial independence, ratings, random assignment in high-stakes cases, and an eventual government evaluation function",
+      "Security program across weights, training and inference infrastructure, and insider threats; distillation-attack reporting channels; regular penetration testing reported to the agency",
+      "Enforcement under any design: a ban on false statements, civil penalties scaling with global revenue, and whistleblower protections with anonymous channels and no contractual gag",
+      "Options for blocking or deterring unsafe models: agency findings of four kinds of violation, with remedies from fines to a bar on further covered deployments until corrected to restrictions on deployed models, and safeguards such as court enforcement, provisional remedies, cabined discretion, and expedited review",
+      "Preemption only if Congress enacts a regime that 'meets or exceeds the strongest measures proposed in this framework,' limited to the functions Congress occupies, with no field preemption, no safe harbor, and narrow construction; absent strong federal law, states keep full authority",
+      "Societal resilience: biosecurity modernization, gene synthesis screening, biosurveillance, stockpiles and broad-spectrum antivirals; open-source security funding, vulnerability remediation at 10–100 times today's volume, binding critical-infrastructure patch schedules, and legacy system replacement",
+    ],
+    regulatoryPhilosophy:
+      "A menu with a bar set high. The framework commits firmly to the information layer — testing, risk reports, system cards, independent evaluators who publish — and to the principle that there must ultimately be a way to block or deter a dangerous model, then deliberately declines to pick a design for that power, offering policymakers a range from lighter-touch to agency-led and suggesting they start light and tighten as capabilities and the evaluator ecosystem mature. Its preemption clause is the most demanding any frontier developer has written: a federal law earns preemption only by meeting or exceeding the framework's strongest measures. That makes the framework the yardstick for Anthropic's own bill, and the bill measures short of it.",
+    strengths: [
+      "Sets an explicit, testable condition on preemption — a federal regime must meet or exceed the framework's strongest measures — and insists on narrow construction, no safe harbor, and full state authority absent strong federal law",
+      "Names evaluator shopping as a problem and proposes concrete fixes: pooled or government funding, ratings, random assignment, cooling-off periods, and licensing",
+      "Its strongest enforcement option lets an agency bar a developer from deploying further covered models for procedural failures, such as a missing risk report or an evaluator without enough access, not only for proven imminent danger",
+      "Reaches internal deployments and puts automated AI R&D on the list of enumerated risks",
+      "Pairs developer obligations with a substantial resilience agenda for biological and cyber threats, recognizing that defenses must work wherever a capability originates",
+    ],
+    weaknesses: [
+      "On the hardest question, who can stop a model and on what showing, it offers options rather than a position, leaving the company free to choose the weakest of them when it drafts a bill",
+      "Covers only developers that pass both a compute and a revenue-or-spending test, so a well-funded smaller lab or a capable model from a modest developer falls outside every obligation",
+      "Evaluator licensing, independent funding, and random assignment are things to 'explore' or that 'could' be done, not requirements",
+      "Incident reporting runs on a single 15-day clock, with no faster deadline for imminent danger",
+      "Written by a frontier developer that would be among the handful of companies covered",
+    ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Developers above 10^25 training operations that also exceed $500M in AI revenue or $1B a year in AI R&D",
+      note:
+        "Part 1 falls entirely on a handful of frontier developers. Part 2's costs land outside the industry's four layers: on gene synthesis providers and benchtop synthesizer makers, which would have to screen orders, and on critical-infrastructure operators, which would face binding patch schedules and legacy replacement, largely with public funding.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 28, y: 72 },
+      "prevention-authority": { x: 80, y: 72 },
+      "innovation-worker": { x: 10, y: 65 },
+      "preemption-obligations": { x: 72, y: 50 },
+    },
+    contrast: {
+      slug: "anthropic-draft",
+      title: "From framework to bill",
+      body: "Anthropic's October draft bill is, by its federal affairs lead's account, this framework in legislative form, and on the information layer it tracks closely: the same four enumerated risks, safety frameworks, six-month risk reports reaching internal models, system cards, 15-day incident reports, and evaluators who publish. The bill goes further in places: a 24-hour clock for imminent danger, an audited security standard, and detailed whistleblower remedies. It reaches further down too, putting transparency and incident duties on every developer above 10^25 operations, where the framework covered only those that also passed the revenue-or-spending test. On every point the framework left open, the bill picks the lighter option. Of the framework's four grounds for agency action, it keeps only one, narrowed to imminent risk and decided by a court. It drops the bar on further deployments until a violation is corrected. Evaluators are rated but not licensed, and are paid by the developer. And it preempts disclosure, evaluation, and incident reporting for every AI developer. The framework said Congress should not preempt state law unless the federal regime meets or exceeds its strongest measures; on blocking authority and evaluator independence, the bill does not.",
+    },
+  },
+  {
     slug: "anthropic-draft",
     name: "Anthropic — Draft Frontier AI Bill (working titles: AEGIS Act; Advanced Artificial Intelligence Accountability Act of 2026)",
     shortName: "Anthropic Draft Bill",
@@ -475,7 +543,8 @@ export const proposals: Proposal[] = [
     ],
     weaknesses: [
       "Written by a company it would regulate, and every procedural safeguard on blocking orders protects the developer: head-of-agency signoff, an independent assessment, least-restrictive-means findings, de novo review, 45-day automatic expiry, and a bar on orders based on information the developer has not seen",
-      "10^25 operations is GPT-4-era compute, well below current frontier training runs, and because compute from a preceding foundation model counts toward the total, anyone who fine-tunes a large open-weight model arguably becomes a frontier developer, owing incident reports on a model it may be unable to monitor once released",
+      "10^25 operations is GPT-4-era compute, well below current frontier training runs, and because compute from a preceding foundation model counts toward the total, anyone who fine-tunes a large open-weight model arguably becomes a frontier developer, owing incident reports on a model it may be unable to monitor once released; Anthropic's own June framework covered only developers that also passed the revenue-or-spending test",
+      "Falls short of the condition Anthropic's June framework set for preemption, a federal regime that 'meets or exceeds the strongest measures proposed': the framework let an agency bar further deployments for missing reports, an unqualified or under-resourced evaluator, or significant catastrophic risk after safeguards, and proposed licensing, pooled funding, and random assignment for evaluators; the draft keeps only a court order for imminent risk and developer-paid, unlicensed evaluators",
       "The test for a blocking order weighs only one side: the court must consider the harm an order would cause to the developer, users, and the public, with no matching instruction to weigh the harm of letting the model run",
       "Drops the FRONTIER Act's substantive standard and corrective-action cycle: no one must judge whether a developer's mitigation is adequate, and nothing requires a developer to fix what an evaluator finds",
       "The enumerated risks that can justify a blocking order are narrower than those in its own catastrophic-risk definition: biological but not chemical, radiological, or nuclear weapons, and no autonomous crime short of offensive cyber operations",
@@ -505,7 +574,7 @@ export const proposals: Proposal[] = [
     contrast: {
       slug: "frontier-act",
       title: "The developer's version of the FRONTIER Act",
-      body: "Anthropic's draft borrows the FRONTIER Act's architecture — tiered developers, independent evaluators on a recurring cycle, mandatory referral of imminent risks, catastrophic risk set at 50 deaths or $1B, an exclusive federal mechanism for stopping a model, and preemption of three named subject areas — and changes who decides and how. Coverage is broader: 10^25 operations rather than 10^26, and a single large-developer tier reached by revenue or spending. Oversight is lighter: evaluators are registered and rated rather than licensed, and their findings bind no one. The emergency power moves from the Commerce Secretary to a federal judge, who may act only on a preponderance of the evidence, for 45 days at a time, after finding that nothing less restrictive would work. The FRONTIER Act's requirement that verifiers judge whether mitigation is adequate, and its corrective-action cycle, are gone. The draft also defines state suspension of a model, including by judicial decree, as a fourth preempted function, effective once the blocking-order section is enacted; it is meant to leave the power to stop a model with the federal government alone, and only a drafting error, a preemption clause that cites the first three functions, keeps it from doing so. Reaction from safety advocates ranged from qualified to sharply critical. The Institute for Law & AI's Charlie Bullock called it reasonable and more than other labs have offered, but weaker than the FRONTIER Act; Nathan Calvin argued that passing it would leave the public less protected against catastrophic risk than current law; and Alex Bores, author of New York's RAISE Act, noted that Anthropic's own June framework conditioned preemption on a federal regime matching its strongest measures. Anthropic's federal affairs lead answered that the draft is meant to be the strongest proposal on the table and that its preemption language would be narrowed. Measured against the FRONTIER Act, it is stronger on coverage, evaluator access, and whistleblower protection, and weaker on rulemaking, emergency authority, penalties, and the adequacy standard.",
+      body: "Anthropic's draft borrows the FRONTIER Act's architecture — tiered developers, independent evaluators on a recurring cycle, mandatory referral of imminent risks, catastrophic risk set at 50 deaths or $1B, an exclusive federal mechanism for stopping a model, and preemption of three named subject areas — and changes who decides and how. Coverage is broader: 10^25 operations rather than 10^26, and a single large-developer tier reached by revenue or spending. Oversight is lighter: evaluators are registered and rated rather than licensed, and their findings bind no one. The emergency power moves from the Commerce Secretary to a federal judge, who may act only on a preponderance of the evidence, for 45 days at a time, after finding that nothing less restrictive would work. The FRONTIER Act's requirement that verifiers judge whether mitigation is adequate, and its corrective-action cycle, are gone. The draft also defines state suspension of a model, including by judicial decree, as a fourth preempted function, effective once the blocking-order section is enacted; it is meant to leave the power to stop a model with the federal government alone, and only a drafting error, a preemption clause that cites the first three functions, keeps it from doing so. Reaction from safety advocates ranged from qualified to sharply critical. The Institute for Law & AI's Charlie Bullock called it reasonable and more than other labs have offered, but weaker than the FRONTIER Act; Nathan Calvin argued that passing it would leave the public less protected against catastrophic risk than current law; and Alex Bores, author of New York's RAISE Act, noted that Anthropic's own June framework conditioned preemption on a federal regime that meets or exceeds its strongest measures, which on blocking authority and evaluator independence the draft does not. Anthropic's federal affairs lead answered that the draft is meant to be the strongest proposal on the table and that its preemption language would be narrowed. Measured against the FRONTIER Act, it is stronger on coverage, evaluator access, and whistleblower protection, and weaker on rulemaking, emergency authority, penalties, and the adequacy standard.",
     },
   },
   {

@@ -168,6 +168,10 @@ export const frontierFamily: Family = {
   ],
   related: [
     {
+      slug: "anthropic-aaif",
+      note: "The June framework Anthropic's draft bill translates. Same information layer, but it covers only developers that pass both the compute and money tests, offers an agency power to bar further deployments for procedural failures, and makes preemption conditional on a federal regime that meets or exceeds its strongest measures, a bar the bill does not clear.",
+    },
+    {
       slug: "cantwell",
       note: "Same components — federal standards, independent audits, incident reporting — but the audit is a gate: no release until it confirms the standards are met. Opposes the preemption the federal members carry.",
     },
