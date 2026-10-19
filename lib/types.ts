@@ -214,3 +214,21 @@ export interface ComparisonRow {
   dimension: string;
   values: Record<ProposalSlug, string>;
 }
+
+/**
+ * A line said about a proposal on a podcast, transcribed verbatim and linked
+ * to the moment it was said. Quotes are reactions, not endorsements of the
+ * site's analysis, and each one names who said it.
+ */
+export interface PodcastQuote {
+  quote: string;
+  speaker: string;
+  speakerDescription: string;
+  stance: "supportive" | "critical" | "analytical";
+  podcast: string;
+  episode: string;
+  /** YYYY-MM-DD the episode was published. */
+  date: string;
+  /** Timestamped link to the moment on Particle Radar. */
+  url: string;
+}

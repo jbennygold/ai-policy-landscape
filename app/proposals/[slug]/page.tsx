@@ -6,6 +6,8 @@ import { Chart2x2 } from "@/components/chart-2x2";
 import { ProposalBadge } from "@/components/proposal-badge";
 import { LayerIncidence } from "@/components/layer-incidence";
 import { frontierFamily } from "@/data/families";
+import { podcastQuotes } from "@/data/podcast-quotes";
+import { PodcastQuotes } from "@/components/podcast-quotes";
 
 export function generateStaticParams() {
   return proposals.map((p) => ({ slug: p.slug }));
@@ -162,6 +164,11 @@ export default async function ProposalPage({
           </ul>
         </div>
       </div>
+
+      <PodcastQuotes
+        quotes={podcastQuotes[proposal.slug] ?? []}
+        color={proposal.color}
+      />
 
       <h2
         className="mt-10 text-2xl font-semibold text-stone-900"
