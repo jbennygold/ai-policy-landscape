@@ -9,6 +9,7 @@ export type ProposalSlug =
   | "anthropic-aaif"
   | "anthropic-draft"
   | "cht-roadmap"
+  | "ari-blueprint"
   | "warner"
   | "warner-s5576"
   | "cantwell"

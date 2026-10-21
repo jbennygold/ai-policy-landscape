@@ -176,6 +176,10 @@ export const frontierFamily: Family = {
       note: "Same components — federal standards, independent audits, incident reporting — but the audit is a gate: no release until it confirms the standards are met. Opposes the preemption the federal members carry.",
     },
     {
+      slug: "ari-blueprint",
+      note: "Keeps the skeleton but makes the government the checker: regulator-set adequacy standards that can only rise, government examination from the outset with private verifiers phased in only once a market exists, and a 72-hour emergency halt. Treats federal law as a floor, not a ceiling, and sunsets after nine years.",
+    },
+    {
       slug: "ca-newsom-eo",
       note: "California building the verification layer onto SB 53 itself: certified verifiers embedded in labs, independent verification of SB 53 filings, and a verified kill switch.",
     },
