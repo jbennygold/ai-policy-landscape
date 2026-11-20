@@ -1570,7 +1570,7 @@ export const proposals: Proposal[] = [
     color: "#0c4a6e",
     primaryFrame: "State independent verification + kill switch",
     summary:
-      "A California executive order signed September 18, 2026, a week after Newsom signed SB 813, which creates a state framework for certifying independent verification organizations (IVOs) to assess AI models for safety risk, and AB 1405, which creates a state registry of AI auditors with independence, transparency, and integrity standards. Citing attempted AI-assisted bioweapons development and AI agents defeating lab security protocols and hacking other companies undetected for months, the order sets implementation deadlines for both laws — IVO application criteria posted by May 1, 2027 and the auditor registry stood up by December 1, 2027 — and directs the Government Operations Agency, with the Office of Emergency Services and national experts, to recommend by November 16, 2026 how state law should be strengthened. The recommendations must address at least four proposals: embedding designated IVOs onsite in every large frontier developer's lab for periodic audits and evaluations; requiring that the safety frameworks, transparency reports, and risk assessments filed under SB 53 be independently verified; requiring a 'kill switch' for frontier models whose efficacy an IVO verifies on an ongoing basis; and expanding the critical safety incidents developers must report to cover loss-of-control incidents. Newsom paired it with a call for Congress to adopt California's framework or treat it as 'a floor, not a ceiling.'",
+      "A California executive order signed September 18, 2026, a week after Newsom signed SB 813, which creates a state framework for certifying independent verification organizations (IVOs) to assess AI models for safety risk, and AB 1405, which creates a state registry of AI auditors with independence, transparency, and integrity standards. Citing attempted AI-assisted bioweapons development and AI agents defeating lab security protocols and hacking other companies undetected for months, the order sets implementation deadlines for both laws — IVO application criteria posted by May 1, 2027 and the auditor registry stood up by December 1, 2027 — and directs the Government Operations Agency, with the Office of Emergency Services and national experts, to recommend by November 16, 2026 how state law should be strengthened. The recommendations must address at least four proposals: embedding designated IVOs onsite in every large frontier developer's lab for periodic audits and evaluations; requiring that the safety frameworks, transparency reports, and risk assessments filed under SB 53 be independently verified; requiring a 'kill switch' for frontier models whose efficacy an IVO verifies on an ongoing basis; and expanding the critical safety incidents developers must report to cover loss-of-control incidents. Newsom paired it with a call for Congress to adopt California's framework or treat it as 'a floor, not a ceiling.' GovOps delivered the recommendations on time, released November 18, 2026 as a separate entry on this map.",
     keyProvisions: [
       "Implementation deadlines for SB 813: the Government Operations Agency must post IVO application requirements, procedures, and criteria by May 1, 2027",
       "Implementation deadlines for AB 1405: the AI auditor registry and its independence standards must be in place by December 1, 2027",
@@ -1619,6 +1619,76 @@ export const proposals: Proposal[] = [
       slug: "frontier-act",
       title: "Newsom's order vs. the FRONTIER Act: the same verifiers, rival sovereigns",
       body: "Both are built on licensed independent verification organizations that assess frontier developers' risk management, and both reach internal use and loss-of-control incidents. The FRONTIER Act would license verifiers federally and permanently preempt state law on frontier risk transparency, third-party auditing and verification, and incident reporting — the exact subject matter of SB 813, AB 1405, and every proposal in Newsom's order. The order goes further than the Act in two directions: verifiers embedded onsite rather than assessing every six months, and a mandatory kill switch whose efficacy is verified continuously, where the Act relies on a Commerce Secretary's emergency order. One of them will set the rule for the labs, and whichever does will take that subject from the other.",
+    },
+  },
+  {
+    slug: "ca-govops-plan",
+    name: "California GovOps — AI Safety in 2026 and Beyond: Recommendations for Legislative Enhancements to California's AI Safety Laws",
+    shortName: "California AI Safety Plan",
+    sponsor:
+      "California Government Operations Agency with Cal OES, for Gov. Gavin Newsom (expert advisers Jason Goldman, Gillian Hadfield, Alondra Nelson, and Rob Reich)",
+    year: "2026",
+    introduced: "2026-11-18",
+    instrument: "framework",
+    themes: ["frontier-safety"],
+    oversight: "intervention",
+    preemption: "opposes",
+    color: "#0369a1",
+    primaryFrame: "State-set standards + mandatory licensed verification + state emergency shutdown",
+    summary:
+      "The recommendations Executive Order N-9-26 commissioned, dated November 16, 2026 and released by Gov. Newsom on November 18 to inform the legislature when it returns in December. It is a report, not a bill: nothing in it binds a developer until lawmakers act, and Governor-elect Xavier Becerra has reportedly pledged to take it up in January. It proposes amending SB 53 rather than replacing it, and moves California from transparency to supervision in seven steps. The state, not the companies, would set baseline safety, security, and transparency standards for every large frontier developer, with licensed independent verification organizations (IVOs) translating them into technical tests. Every large frontier developer would be overseen continuously by IVOs licensed by GovOps under SB 813, with full access to people and information and unredacted assessments shared with the state; if an IVO cannot attest to compliance, the state could order corrective action, which a developer may challenge in court before it takes effect, and a court ruling for the state could make compliance a condition of further model development. Developers would report metrics on the automation of AI research and development, including the share of compute spent on it, and the state could cap recursive self-improvement it judges catastrophically risky. Incident reporting would tighten from 15 days to 48 hours and widen to cover weight-theft attempts, every loss-of-control event, and near misses, with whistleblower protection extended to former employees and contractors. Coverage would reach models capable of catastrophic actions trained below 10^26 operations, and distilled models, with thresholds adjustable without new legislation. And each large frontier developer would keep an IVO-verified Risk Containment Protocol, a kill switch operating at the level of compute, agents, internal access, and deployment, while the state could order an immediate emergency shutdown when a developer refuses to contain a danger it has 'credible reason' to believe is an imminent catastrophic or major loss-of-control threat, in force during judicial review. CalCompute, authorized by SB 53 but never funded, would be paid for by a surcharge on IVO fees.",
+    keyProvisions: [
+      "State-set baseline safety, security, and transparency standards for all large frontier developers, translated into technical tests by licensed IVOs and updated as the science changes",
+      "Mandatory, ongoing IVO oversight of every large frontier developer: IVOs licensed and revocable by GovOps under SB 813, with full access to personnel and information and unredacted assessments shared with the state; further independence measures such as rotation, state-assigned IVOs, and pooled payment left for the legislature to consider",
+      "Corrective-action orders when an IVO cannot attest to compliance, decided by the state after engaging the developer and reviewable in court before they take effect; a court ruling for the state can compel adherence to state standards as a condition of further model development",
+      "Recursive self-improvement: reporting of AI R&D automation metrics, including the share of compute spent on it, verified by IVOs as their first task, and state authority to cap the development and use of RSI judged catastrophically risky",
+      "Incident reporting cut from 15 days to 48 hours (24 hours for imminent catastrophic risk unchanged), extended to weight-theft attempts, all loss-of-control events even without injury, and a near-miss channel; whistleblower protection for former employees and contractors",
+      "Coverage: models capable of catastrophic actions even below 10^26 operations, distilled models, and, agreeing with the California Department of Technology, developers above a frontier R&D spending threshold as well as the $500M revenue test; thresholds adjustable without legislation",
+      "Risk Containment Protocol for each large frontier developer, verified on an ongoing basis by an IVO and certified by a senior officer: intervention at the compute, agent, internal-access, and deployment levels, named people responsible for intervening, coordination with cloud and power providers, criteria for restoring a model, and testing for shutdown resistance such as weight copying and for outside access to the shutdown controls",
+      "State emergency shutdown where a developer refuses to contain a danger the state has 'credible reason' to believe is an imminent catastrophic or major loss-of-control threat: immediate effect, open to a temporary restraining order but in force during judicial review, limited to the narrowest workable intervention, with a Cal OES after-action review; open-weight developers covered only for deployments they control",
+      "CalCompute funded by a surcharge on IVO fees, with capacity reserved for safety research",
+    ],
+    regulatoryPhilosophy:
+      "From disclosure to supervision, under state authority. SB 53 asked developers to write and publish their own safety rules; the plan has the state write the rules, licensed verifiers check compliance continuously from inside the lab, and the state hold both a corrective-action power and an emergency brake. It is the first government document on the map to treat recursive self-improvement as a regulated activity with a cap rather than a disclosure item. It positions California as the national baseline in the absence of Congress, saying the state 'can revisit the rules recommended in this report if Congress enacts a strong regulatory framework,' while Newsom asks Washington to treat it as 'a floor, not a ceiling.'",
+    strengths: [
+      "Delivers on time what Executive Order N-9-26 asked for and goes further, converting the order's four proposals into a full supervisory design with a path into the December legislative session",
+      "State-set standards close the central gap in SB 53, under which developers can comply perfectly with a framework too weak to matter",
+      "Caps on recursive self-improvement and IVO-verified R&D automation metrics address the capability most likely to outrun any fixed review cycle",
+      "A capability test and coverage of distilled models fix the 10^26 threshold's blind spot, which the report illustrates with the summer 2026 Hugging Face incident",
+      "The Risk Containment Protocol treats the kill switch as a tested, multi-level engineering obligation that includes cloud and power providers and shutdown resistance",
+      "A 48-hour incident clock with near misses, weight theft, and loss of control is the broadest reporting regime on the map",
+      "Pays for public compute out of the verification market, finally funding CalCompute",
+    ],
+    weaknesses: [
+      "Recommendations only: every obligation requires new legislation, and the plan passes from Newsom to a new governor and a new session before any bill is written",
+      "Developers still pay the IVOs that judge them; rotation, state assignment, and pooled payment are left as ideas for the legislature rather than recommended",
+      "An emergency shutdown on 'credible reason' to believe a threat is imminent is a lower evidentiary bar than the FRONTIER Act's finding of imminent catastrophic risk, ARI's substantial evidence, or Anthropic's requirement that the government first win in court, and the order stays in force while it is reviewed",
+      "Leaves liability, open-weight models beyond deployments the developer controls, child safety, and other harms outside SB 53 for later",
+      "A state cap on recursive self-improvement invites dormant Commerce Clause challenges, and the verification and incident-reporting core falls squarely within the subject areas the introduced FRONTIER Act would permanently preempt, though its 2.0 draft would drop that preemption",
+      "Depends on an IVO profession that California has not yet licensed; SB 813's application criteria are not due until May 2027",
+    ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "indirect",
+        chips: "none",
+      },
+      base:
+        "Large frontier developers (above $500M in revenue, plus a proposed R&D spending test), with coverage extended to capable models below 10^26 operations and distilled models",
+      note:
+        "Every obligation lands on the frontier layer and reaches its internal operations — R&D automation, internal access, compute allocation — not just its published documents. Hyperscalers are touched indirectly: containment protocols must coordinate with cloud and power providers, so an emergency shutdown runs through them. IVO fees, plus a surcharge for CalCompute, are a direct charge on the frontier layer. Because most frontier developers are based in California, a statute built on this plan would function as a de facto national rule.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 25, y: 85 },
+      "prevention-authority": { x: 70, y: 82 },
+      "innovation-worker": { x: 20, y: 52 },
+      "preemption-obligations": { x: 82, y: 6 },
+    },
+    contrast: {
+      slug: "ca-newsom-eo",
+      title: "From the executive order to the plan: what the recommendations added",
+      body: "Executive Order N-9-26 asked for recommendations on four proposals: onsite verifiers, verified SB 53 filings, an IVO-verified kill switch, and loss-of-control incident reporting. The plan delivered all four and built a supervisory regime around them. Verification became mandatory and continuous, measured against standards the state sets rather than the developers' own frameworks. The kill switch became a Risk Containment Protocol paired with something the order never mentioned: the state's own power to order an emergency shutdown, effective immediately. It added three things the order did not ask for — a cap on recursive self-improvement, coverage of capable models below 10^26 operations, and a 48-hour incident clock — and answered the order's open question of who holds the kill switch: the developer builds it, a verifier tests it, and the state can pull it.",
     },
   },
   {
@@ -1968,7 +2038,7 @@ export const proposals: Proposal[] = [
     color: "#4338ca",
     primaryFrame: "Tiered federal frontier oversight + emergency powers",
     summary:
-      "The Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act, introduced July 23, 2026 and referred to Energy and Commerce and to Science, Space, and Technology, is the introduced successor to the frontier title of the GAAIA discussion draft Obernolte and Trahan released in June — and a substantially harder instrument. It creates an Under Secretary of Commerce for AI Security and three cumulative tiers. Every frontier developer (a foundation model trained above 10^26 operations, counting fine-tuning and RL) must publish a transparency report before or with each deployment and report critical safety incidents within 72 hours, or to law enforcement within 24 hours if there is an imminent risk of death or serious injury. Large frontier developers (over $50M in revenue and $1B in AI development spending over 36 months) must publish a frontier AI framework, obtain an annual independent compliance audit, file quarterly confidential summaries of catastrophic risk from internal use, and may not develop or deploy a frontier model without a registration statement disclosing their beneficial owners. Very large frontier developers (over $5B in revenue and $10B in AI spending) must retain a federally licensed Independent Verification Organization for ongoing assessment, at least every six months, of whether their risk mitigation is adequate to ensure benefits outweigh catastrophic risk, with corrective-action cycles, public redacted reports, and mandatory IVO referral of imminent risks. The Secretary of Commerce may issue emergency orders suspending a model's development, deployment, or internal use on a finding of imminent catastrophic risk, backed by $10M-per-day civil penalties and criminal penalties of up to 10 years. Preemption is permanent but confined to three subject areas — frontier risk transparency, third-party auditing and verification, and incident reporting — expressly preserving state laws of general applicability, regulation of deployment and use, child-safety laws, and state procurement.",
+      "The Frontier Risk Oversight, National Transparency, Independent Evaluation, and Reporting Act, introduced July 23, 2026 and referred to Energy and Commerce and to Science, Space, and Technology, is the introduced successor to the frontier title of the GAAIA discussion draft Obernolte and Trahan released in June — and a substantially harder instrument. It creates an Under Secretary of Commerce for AI Security and three cumulative tiers. Every frontier developer (a foundation model trained above 10^26 operations, counting fine-tuning and RL) must publish a transparency report before or with each deployment and report critical safety incidents within 72 hours, or to law enforcement within 24 hours if there is an imminent risk of death or serious injury. Large frontier developers (over $50M in revenue and $1B in AI development spending over 36 months) must publish a frontier AI framework, obtain an annual independent compliance audit, file quarterly confidential summaries of catastrophic risk from internal use, and may not develop or deploy a frontier model without a registration statement disclosing their beneficial owners. Very large frontier developers (over $5B in revenue and $10B in AI spending) must retain a federally licensed Independent Verification Organization for ongoing assessment, at least every six months, of whether their risk mitigation is adequate to ensure benefits outweigh catastrophic risk, with corrective-action cycles, public redacted reports, and mandatory IVO referral of imminent risks. The Secretary of Commerce may issue emergency orders suspending a model's development, deployment, or internal use on a finding of imminent catastrophic risk, backed by $10M-per-day civil penalties and criminal penalties of up to 10 years. Preemption is permanent but confined to three subject areas — frontier risk transparency, third-party auditing and verification, and incident reporting — expressly preserving state laws of general applicability, regulation of deployment and use, child-safety laws, and state procurement. A November 2026 discussion draft, FRONTIER Act 2.0, would reverse that preemption into a floor and lower coverage to 10^25 operations; its changes are recorded below.",
     keyProvisions: [
       "Under Secretary of Commerce for AI Security, with rulemaking deadlines of 180 days for framework requirements, IVO licensing, and modification criteria, and authority to raise (but not lower) the coverage thresholds",
       "All frontier developers (>10^26 operations): pre-deployment transparency reports with risk assessments and third-party involvement in machine-readable form; critical incident reports within 72 hours, or 24 hours to law enforcement for imminent risk; up to $1M per day in civil penalties",
@@ -2010,7 +2080,7 @@ export const proposals: Proposal[] = [
       base:
         "Frontier developers above 10^26 operations, tiered by revenue and AI development spending",
       note:
-        "Every obligation lands on the frontier layer, and the tiering decides how hard. Revenue and spending are aggregated across affiliates, so labs inside hyperscaler parents — Google DeepMind, Meta — are measured at parent scale and land in the very large tier, but they are assessed as model developers, not as cloud operators. Deployers are explicitly carved out of the preemption definition and untouched by the bill. The fee-funded registration regime is the only charge on the map that a frontier developer pays directly to a regulator.",
+        "Every obligation lands on the frontier layer, and the tiering decides how hard. Revenue and spending are aggregated across affiliates, so labs inside hyperscaler parents — Google DeepMind, Meta — are measured at parent scale and land in the very large tier, but they are assessed as model developers, not as cloud operators. Deployers are explicitly carved out of the preemption definition and untouched by the bill. The fee-funded registration regime was the first charge on the map that a frontier developer pays directly to a regulator; the SAFE AI Act's evaluation fund and the 2.0 draft's IVO pool would add others.",
     },
     chartPositions: {
       "enforcement-scope": { x: 25, y: 88 },
@@ -2018,10 +2088,183 @@ export const proposals: Proposal[] = [
       "innovation-worker": { x: 10, y: 65 },
       "preemption-obligations": { x: 82, y: 62 },
     },
+    revisions: [
+      {
+        label: "FRONTIER Act 2.0",
+        date: "2026-11-19",
+        status:
+          "Discussion draft of the FRONTIER Act of 2027, reported by the Washington Post on November 19, 2026 as Rep. Trahan's new framework. Analysis rests on the draft's section-by-section summary; the full text has not been published, and whether Rep. Obernolte and the other introducing cosponsors back it is not confirmed.",
+        summary:
+          "Four months after introduction, the redraft keeps the bill's architecture — tiered obligations, licensed IVOs for the largest developers, a Commerce emergency-order power — but moves nearly every contested choice toward the critics of H.R. 9925. Preemption is reversed into a floor, coverage drops by an order of magnitude, the government begins assigning and pooling payment for verifiers, automated AI R&D becomes its own category of catastrophic risk, and near misses become reportable and, uniquely on this map, penalized in proportion to the harm they reveal. It now sunsets after ten years.",
+        changes: [
+          {
+            area: "State law",
+            before:
+              "Permanent preemption of state rules on frontier risk transparency, third-party auditing and verification, and incident reporting",
+            after:
+              "A floor: nothing preempts a state law at least as protective as the Act, except confidentiality of shared federal materials and IVOs' good-faith protection",
+          },
+          {
+            area: "Coverage",
+            before:
+              "Foundation models above 10^26 operations; thresholds may be raised but never lowered",
+            after:
+              "Above 10^25 operations, reaching all of a covered developer's foundation models; the Secretary may adjust compute and spending thresholds in either direction and add capability-based criteria",
+          },
+          {
+            area: "Tiers",
+            before:
+              "Large: >$50M revenue and ≥$1B AI spending; very large: >$5B revenue and ≥$10B AI spending (36 months)",
+            after:
+              "AI development spending only, with affiliates over 36 months: ≥$1B for large, ≥$5B for very large; the revenue tests are gone",
+          },
+          {
+            area: "Regulator",
+            before: "Under Secretary of Commerce for AI Security",
+            after:
+              "Office of AI Security headed by a Senate-confirmed Assistant Secretary, with hiring authority and $100M a year authorized",
+          },
+          {
+            area: "Automated AI R&D",
+            before: "Covered through internal-use risk reporting",
+            after:
+              "Its own category of catastrophic risk, including recursive self-improvement: frameworks must address it, large developers report quarterly on AI R&D capabilities with a 72-hour rapid report on substantial increases, and very large developers retain an IVO dedicated to it",
+          },
+          {
+            area: "Incidents",
+            before: "72 hours; 24 hours to law enforcement for imminent risk",
+            after:
+              "Same clocks, now covering near misses and loss of control including deception of the developer; quarterly certification that every known incident was reported; governors may designate a state agency to receive incidents affecting the state",
+          },
+          {
+            area: "Near misses",
+            before: "Not addressed",
+            after:
+              "Civil penalty for every near miss, set by rule so expected penalties equal the expected catastrophic harm a developer could not pay for; ten times the amount if unreported; none for designed evaluations",
+          },
+          {
+            area: "Who picks and pays the verifier",
+            before: "The developer retains and pays a licensed IVO",
+            after:
+              "Phased by risk category: developer-chosen assessors first; once licensed capacity exists the Secretary assigns the IVO, paid from a fee-funded pool; later, assignment combined with developer choice",
+          },
+          {
+            area: "Verifier access",
+            before: "Ongoing assessment at least every six months",
+            after:
+              "A Secretary-approved access plan covering unredacted materials, weights, internal-use models, and personnel, with a resident IVO team on site; IVOs set scope and frequency, reporting at least every six months",
+          },
+          {
+            area: "When a verifier finds a deficiency",
+            before: "14-day corrective-action response from the developer",
+            after:
+              "If the developer does not cure, the Secretary may order corrective action after notice and a hearing, subject to judicial review and enforceable by the Attorney General",
+          },
+          {
+            area: "Verifier liability",
+            before:
+              "Immune from suit over catastrophic harms, except a federal action for willful misconduct causing death or serious injury",
+            after:
+              "Protected for good-faith findings and reports only, with bad faith and willful misconduct excepted; knowing misrepresentations penalized; GAO reports annually on IVO independence",
+          },
+          {
+            area: "Penalties",
+            before: "Up to $1M per day",
+            after:
+              "Greater of $1M per violation or a percentage of global annual revenue, higher for repeat violations, with notice and an opportunity to cure for framework-reasonableness claims",
+          },
+          {
+            area: "Emergency orders",
+            before:
+              "45-day provisional and 90-day renewable final orders on a finding of imminent catastrophic risk; exclusive route for any federal official",
+            after:
+              "Same structure, but each order must explain why a narrower measure would not suffice, renewal needs a fresh finding, the Secretary bears the burden at an expedited hearing and must prove necessity in court to keep a longer order; the summary does not mention the exclusivity clause",
+          },
+          {
+            area: "Duration",
+            before: "Permanent",
+            after: "Sunsets ten years after enactment",
+          },
+        ],
+        direction:
+          "The redraft converges on the designs that appeared after H.R. 9925 was introduced. Government-assigned verifiers paid from a pool, onsite verification, a federal floor, a sunset, and automated AI R&D as a distinct risk all appear in ARI's August blueprint, California's November plan, or the SAFE AI Act released the day before. The trade the introduced bill offered industry — permanent preemption in exchange for oversight — is gone, while the oversight itself got heavier. What it keeps is the developer-facing architecture of licensed private verifiers and a cabinet-level emergency power, rather than the government examiners SAFE and ARI put at the center.",
+      },
+    ],
     contrast: {
       slug: "gaaia",
       title: "From GAAIA to the FRONTIER Act: what changed on introduction",
       body: "Obernolte and Trahan's June 2026 discussion draft became an introduced bill seven weeks later, and nearly every change made it harder. GAAIA housed oversight in a statutory CAISI with voluntary standards; the FRONTIER Act creates an Under Secretary for AI Security with mandatory rulemaking. GAAIA's licensed IVOs audited frameworks; the Act's IVOs judge whether mitigation is adequate on a recurring six-month cycle and must refer imminent risks. GAAIA had no way to stop a model; the Act adds emergency suspension orders backed by criminal penalties. The trade ran the other way on preemption, which lost its three-year sunset and became permanent, though it narrowed to three named subject areas. The workforce, cybersecurity, and research titles were dropped, leaving a frontier-safety bill only.",
+    },
+  },
+  {
+    slug: "safe-ai-act",
+    name: "Safe and Accountable Federal Evaluations of Artificial Intelligence Act (SAFE AI Act) — outline",
+    shortName: "SAFE AI Act",
+    sponsor:
+      "Reps. Sara Jacobs (D-CA), Celeste Maloy (R-UT), and Don Beyer (D-VA)",
+    year: "2026",
+    introduced: "2026-11-18",
+    instrument: "framework",
+    themes: ["frontier-safety"],
+    oversight: "intervention",
+    preemption: "opposes",
+    color: "#15803d",
+    primaryFrame: "Government-led evaluation + independent evaluators + a federal floor",
+    summary:
+      "A two-page bipartisan outline released by Reps. Jacobs, Maloy, and Beyer in November 2026; no bill text has been published, so thresholds, penalty amounts, deadlines, and the agency structure beyond CAISI are unknown. It starts from three gaps: frontier developers write their own safety rules, no one outside the company can verify that they follow them, and when the government does halt a model there is no transparency about the criteria. Its answer is to make oversight 'primarily by government.' Frontier developers would publish enforceable safety frameworks stating what they test for, what thresholds prompt mitigation, and what the mitigations are, which they could not unilaterally loosen, against minimum requirements written by CAISI with the intelligence community and the Department of Energy. Government teams would examine each developer's framework for compliance, with government-accredited third-party verifiers sharing the work in their accredited domains while government teams retain ultimate authority. Evaluators would be assigned by CAISI with mandatory rotation, paid from a fee-based fund rather than by developers, with caps on funding from any one developer and revolving-door limits. Evaluations would precede commercial release or broad internal use, including automated AI R&D, which developers must also disclose. The government could order mitigation where safeguards are inadequate and a system poses imminent risk of severe harm, subject to prompt judicial review. Civil penalties, criminal referral, whistleblower protection, clarified developer liability for reasonably foreseeable injuries, and confidential incident reporting by anyone round it out. States 'can shape regulation above the federal floor.'",
+    keyProvisions: [
+      "Enforceable safety frameworks, filed and published, stating what each developer tests for, what thresholds trigger mitigation, and what the mitigations are; frameworks cannot be unilaterally loosened",
+      "Minimum framework requirements written by CAISI with interagency partners including the intelligence community and the Department of Energy, informed by technical experts, standards, public input, and best practices",
+      "Disclosure of substantially autonomous AI R&D under prescribed measures",
+      "Scope, risk domains, and requirements can evolve over time; startups and academics are generally not covered",
+      "Mandatory incident reporting by developers, confidential reporting of safety incidents by anyone to CAISI, and reporting of imminent risk of severe harm by evaluators and developers",
+      "Government teams examine every developer's framework for compliance with federal requirements; government-accredited third-party verifiers conduct compliance evaluations in their accredited domains, with government teams retaining ultimate authority",
+      "Evaluator independence: developers do not pay evaluators directly, a fee-based fund with caps on any one developer's contribution, CAISI assignment of evaluators with mandatory rotation, and conflict-of-interest limits on the revolving door",
+      "Pre-deployment evaluations of framework compliance before commercial release or broad internal use, including automated AI R&D",
+      "Narrow emergency authority to order mitigation measures where safeguards are inadequate and a system poses imminent risk of severe harm, subject to prompt judicial review",
+      "Civil penalties for framework violations with remediation opportunities and judicial review, enhanced penalties for knowing or willful violations, and procedures for criminal referral",
+      "Clarified developer liability for reasonably foreseeable injuries to third parties caused by AI systems, and whistleblower protection for people inside covered entities",
+      "A federal floor: states can regulate above it",
+    ],
+    regulatoryPhilosophy:
+      "Government as the primary checker, with transparency about how it acts. The outline is the first congressional proposal to adopt the supervisory model ARI's blueprint laid out: government examiners at the center, private verifiers accredited to help but never to decide, and an independence regime — assignment, rotation, pooled fees — designed so the checkers do not answer to the checked. It pairs that with discipline on the government itself, presenting a defined emergency power with judicial review as the alternative to halting models on undisclosed criteria. Unlike the FRONTIER Act as introduced, it reaches before deployment and into internal use, adds liability rather than shielding anyone from it, and leaves states free to go further; the FRONTIER Act 2.0 draft, released a day later, moved toward it on the last two.",
+    strengths: [
+      "Bipartisan, with a Republican cosponsor, and the first congressional frontier proposal to pair a federal regime with a federal floor rather than preemption; the FRONTIER Act 2.0 draft followed a day later",
+      "Fixes the incentive problem in the IVO designs: developers do not choose or pay their evaluators, who are assigned and rotated by CAISI and funded from a capped pool",
+      "Pre-deployment evaluation that covers broad internal use and automated AI R&D, where the FRONTIER Act assesses on a six-month cycle without a release gate",
+      "Frameworks that cannot be loosened unilaterally end developers' ability to revise their safety commitments downward",
+      "Clarifies developer liability for foreseeable third-party injury, the reverse of the FRONTIER Act's immunity for verifiers",
+      "Anyone may report an incident confidentially to CAISI, not only the developer",
+    ],
+    weaknesses: [
+      "An outline, not a bill: no compute or revenue threshold, no incident deadline, no penalty amounts, and no answer to who issues emergency orders or what a court reviews",
+      "Government examination of every covered developer requires a CAISI workforce and interagency capacity that do not exist today, and the outline does not say how it is funded beyond evaluator fees",
+      "Unclear whether pre-deployment evaluation is a gate: it assesses 'framework compliance' before release, but the outline does not say a failed evaluation stops one",
+      "The emergency power orders 'mitigation measures,' leaving open whether the government can halt development or only require changes",
+      "A floor rather than a ceiling removes the preemption trade that drew industry and leadership support to the introduced FRONTIER Act and the Senate draft, though the FRONTIER Act 2.0 draft has since dropped it too",
+    ],
+    layers: {
+      incidence: {
+        frontier: "primary",
+        apps: "none",
+        hyperscalers: "none",
+        chips: "none",
+      },
+      base:
+        "Frontier developers (threshold not specified; startups and academics generally excluded)",
+      note:
+        "Every obligation lands on frontier developers, including their internal use and automated R&D. Developers fund evaluation through a pooled fee rather than paying evaluators directly, with a cap on any one developer's share, so the largest labs cannot become their evaluators' dominant client. The liability clause reaches 'developers' generally, which could extend incidence beyond the frontier layer once text defines the term.",
+    },
+    chartPositions: {
+      "enforcement-scope": { x: 28, y: 82 },
+      "prevention-authority": { x: 80, y: 75 },
+      "innovation-worker": { x: 12, y: 55 },
+      "preemption-obligations": { x: 80, y: 15 },
+    },
+    contrast: {
+      slug: "ari-blueprint",
+      title: "The ARI blueprint, in a congressional outline",
+      body: "The SAFE AI Act reads as the legislative descendant of ARI's August blueprint. Both make government teams the primary examiners and admit accredited private verifiers only as help in their domains, with the government keeping the final word; both route fees through a pool with per-developer caps, rotate evaluators, and restrict the revolving door; both require disclosure of automated AI R&D; both make frameworks impossible to loosen; and both leave states free to legislate above a federal floor. SAFE adds what ARI left open or set aside — a named agency (CAISI, with the intelligence community and DOE), pre-deployment evaluation before release or broad internal use, clarified developer liability, and criminal referral — and drops what ARI specified, including the five statutory risk domains, the 72-hour lapse on emergency orders, and the nine-year sunset.",
     },
   },
   {

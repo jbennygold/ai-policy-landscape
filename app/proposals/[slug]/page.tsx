@@ -8,6 +8,7 @@ import { LayerIncidence } from "@/components/layer-incidence";
 import { frontierFamily } from "@/data/families";
 import { podcastQuotes } from "@/data/podcast-quotes";
 import { PodcastQuotes } from "@/components/podcast-quotes";
+import { Revisions } from "@/components/revisions";
 
 export function generateStaticParams() {
   return proposals.map((p) => ({ slug: p.slug }));
@@ -58,6 +59,8 @@ export default async function ProposalPage({
       <p className="mt-6 text-base leading-relaxed text-stone-700">
         {proposal.summary}
       </p>
+
+      <Revisions proposal={proposal} />
 
       <h2
         className="mt-10 text-2xl font-semibold text-stone-900"

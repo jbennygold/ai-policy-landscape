@@ -23,12 +23,14 @@ export type ProposalSlug =
   | "gallego"
   | "ca-sb53"
   | "ca-newsom-eo"
+  | "ca-govops-plan"
   | "il-sb315"
   | "ny-raise"
   | "pa-shapiro-eo"
   | "tx-abbott-audit"
   | "gaaia"
   | "frontier-act"
+  | "safe-ai-act"
   | "lieu-kill-switch"
   | "hawley-murphy"
   | "trahan-claim"
@@ -71,6 +73,13 @@ export interface Proposal {
    * silence is itself part of the analysis.
    */
   dataCenter?: DataCenterPosition;
+  /**
+   * Later versions of the same proposal, oldest first. The entry's tags and
+   * analysis describe the version named in `name`; a revision records where a
+   * newer draft moves, so the direction of travel is visible without
+   * rewriting the record of what was introduced.
+   */
+  revisions?: Revision[];
   /** Optional side-by-side contrast with another proposal, rendered as a callout. */
   contrast?: {
     slug: ProposalSlug;
@@ -232,4 +241,21 @@ export interface PodcastQuote {
   date: string;
   /** Timestamped link to the moment on Particle Radar. */
   url: string;
+}
+
+/** A newer version of a proposal, and what it changes from the tracked text. */
+export interface Revision {
+  label: string;
+  /** YYYY-MM-DD the revision became public. */
+  date: string;
+  /** What the revision is and what the analysis rests on. */
+  status: string;
+  summary: string;
+  changes: {
+    area: string;
+    before: string;
+    after: string;
+  }[];
+  /** What the changes add up to. */
+  direction: string;
 }

@@ -29,9 +29,9 @@ export const frontierFamily: Family = {
   slug: "frontier",
   title: "The Frontier Framework Family",
   subtitle:
-    "Eight proposals built on one design, and how they differ on who checks, who can stop a model, and what states keep",
+    "Ten proposals built on one design, and how they differ on who checks, who can stop a model, and what states keep",
   intro: [
-    "The most common design for frontier-model regulation began as a California transparency law and now runs through two state laws that adopted it, a House discussion draft, an introduced House bill, an unpublished Senate draft, and two industry proposals. Every member shares the same skeleton: covered developers write and follow a safety framework, publish a report when they release a new model, and report critical safety incidents on a short clock. Catastrophic risk is typically defined by a casualty-or-damage threshold: more than 50 deaths or $1 billion from a single incident in SB 53, the FRONTIER Act, and Anthropic's text.",
+    "The most common design for frontier-model regulation began as a California transparency law and now runs through two state laws that adopted it, a House discussion draft, an introduced House bill, an unpublished Senate draft, two industry proposals, California's plan to rebuild SB 53 around state supervision, and a bipartisan House outline. Every member shares the same skeleton: covered developers write and follow a safety framework, publish a report when they release a new model, and report critical safety incidents on a short clock. Catastrophic risk is typically defined by a casualty-or-damage threshold: more than 50 deaths or $1 billion from a single incident in SB 53, the FRONTIER Act, and Anthropic's text.",
     "What changes from one version to the next is what is built on top of that skeleton. Read in order, the table shows three additions: someone outside the developer checking its claims, someone able to stop a model in an emergency, and, in the federal versions, preemption of exactly the state laws the design began as.",
   ],
   columns: [
@@ -137,7 +137,7 @@ export const frontierFamily: Family = {
         incidents: "72 hours; 24 hours to law enforcement if imminent",
         stop: "The Commerce Secretary, by emergency order on a finding of imminent catastrophic risk (45-day provisional, 90-day renewable final), reviewable in D.C. District Court",
         preemption:
-          "Permanent, limited to frontier risk transparency, third-party auditing and verification, and incident reporting",
+          "Permanent, limited to frontier risk transparency, third-party auditing and verification, and incident reporting. The November 2026 2.0 draft reverses this into a floor, preempting only less protective state law",
       },
     },
     {
@@ -165,6 +165,31 @@ export const frontierFamily: Family = {
           "Disclosure, third-party evaluation, and incident reporting, for every AI developer; void if the federal requirements fall. Anthropic says it will narrow this to leave states evaluator standards and labs' shutdown capability",
       },
     },
+    {
+      slug: "ca-govops-plan",
+      cells: {
+        form: "State recommendations to the legislature (no text)",
+        coverage:
+          "Large frontier developers ($500M revenue, plus a proposed R&D spending test); capable models below 10^26 operations and distilled models",
+        checks:
+          "State-licensed verifiers overseeing every large developer continuously against standards the state sets, with full access and unredacted reports to the state",
+        incidents: "48 hours; 24 hours if imminent; near misses, weight theft, and all loss of control reportable",
+        stop: "The state, by immediate emergency shutdown on credible reason to believe a catastrophic threat is imminent, in force during judicial review; also corrective-action orders and a cap on recursive self-improvement",
+        preemption: "State law; 'a floor, not a ceiling'",
+      },
+    },
+    {
+      slug: "safe-ai-act",
+      cells: {
+        form: "Bipartisan House outline (no text)",
+        coverage: "Frontier developers (threshold not specified; startups and academics generally excluded)",
+        checks:
+          "Government teams examine every developer, with accredited verifiers assigned and rotated by CAISI and paid from a pooled fund; pre-deployment evaluation, including broad internal use",
+        incidents: "Required, with confidential reporting by anyone to CAISI; clock not specified",
+        stop: "The government, by emergency mitigation order where safeguards are inadequate and risk of severe harm is imminent, subject to prompt judicial review",
+        preemption: "None: a federal floor that states can regulate above",
+      },
+    },
   ],
   related: [
     {
@@ -181,7 +206,7 @@ export const frontierFamily: Family = {
     },
     {
       slug: "ca-newsom-eo",
-      note: "California building the verification layer onto SB 53 itself: certified verifiers embedded in labs, independent verification of SB 53 filings, and a verified kill switch.",
+      note: "The order that commissioned California's plan: it asked for recommendations on certified verifiers embedded in labs, independent verification of SB 53 filings, and a verified kill switch, and the plan delivered all three.",
     },
     {
       slug: "lieu-kill-switch",
@@ -195,8 +220,9 @@ export const frontierFamily: Family = {
   observations: [
     "The skeleton has held. Every member requires a framework, release reports, and incident reporting, and the disagreements are about what sits on top of it.",
     "Verification moved from absent to standard. The 2025 state laws relied on developers' own descriptions; every member from mid-2026 has someone outside the developer reviewing its claims, though the reviewers range from the developer's own testers reporting to Commerce to licensed verifiers with a substantive adequacy standard.",
-    "The emergency brake arrived in mid-2026 and is placed differently in each version: with a cabinet secretary in the FRONTIER Act, and with a federal judge in the Senate draft and Anthropic's text. Anthropic's version puts the burden of proof on the government, requires the least restrictive measure, and directs the court to weigh the harm an order would cause but not the harm of declining to act.",
+    "The emergency brake arrived in mid-2026 and is placed differently in each version: with a cabinet secretary in the FRONTIER Act, with a federal judge in the Senate draft and Anthropic's text, with the government subject to prompt judicial review in the SAFE AI Act, and, in California's plan, with the state itself, effective immediately and in force during review. Anthropic's version puts the burden of proof on the government, requires the least restrictive measure, and directs the court to weigh the harm an order would cause but not the harm of declining to act.",
     "Broader coverage does not mean a stricter bill. The industry-drafted Anthropic bill reaches further down (10^25 operations, a single revenue-or-spending test) than the FRONTIER Act (10^26, revenue-and-spending tiers), but the developers it adds owe only disclosure and incident reports, and its evaluators have less authority over anyone.",
-    "Federal preemption is aimed at the states where the design began. Each federal member displaces state transparency, auditing, and incident-reporting rules — the subjects of SB 53, RAISE, and SB 315 — while preserving child safety, deployment rules, and general state law. They differ on duration (three-year sunset in GAAIA, permanent in FRONTIER) and on reach (Anthropic's covers every AI developer, not just covered ones).",
+    "Federal preemption is aimed at the states where the design began. Every federal member through October displaces state transparency, auditing, and incident-reporting rules — the subjects of SB 53, RAISE, and SB 315 — while preserving child safety, deployment rules, and general state law. They differ on duration (three-year sunset in GAAIA, permanent in FRONTIER) and on reach (Anthropic's covers every AI developer, not just covered ones).",
+    "The newest members turn the checker into the government. California's plan and the SAFE AI Act, both released in November 2026, move past developer-retained verifiers: the state sets the standard and licenses verifiers with full access in California, and in SAFE government teams examine every developer, with evaluators assigned, rotated, and paid from a pool rather than by the lab. Both also return to a floor rather than preemption, reversing the trade the earlier federal members made — and a day later the FRONTIER Act's own 2.0 draft did the same, adding government-assigned verifiers paid from a pool, onsite verifier teams, a 10^25 threshold, and a ten-year sunset.",
   ],
 };
