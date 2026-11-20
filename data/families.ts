@@ -174,7 +174,7 @@ export const frontierFamily: Family = {
         checks:
           "State-licensed verifiers overseeing every large developer continuously against standards the state sets, with full access and unredacted reports to the state",
         incidents: "48 hours; 24 hours if imminent; near misses, weight theft, and all loss of control reportable",
-        stop: "The state, by immediate emergency shutdown on credible reason to believe a catastrophic threat is imminent, in force during judicial review; also corrective-action orders and a cap on recursive self-improvement",
+        stop: "The state, by immediate emergency shutdown when a developer refuses to contain a threat the state has credible reason to believe is imminent, in force during judicial review; also corrective-action orders and a cap on recursive self-improvement",
         preemption: "State law; 'a floor, not a ceiling'",
       },
     },
